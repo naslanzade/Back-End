@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/lib/animate/animate.min.css">
+    <link rel="stylesheet" href="~/assets/scss/home/home.css">
+    @await RenderSectionAsync("Css", required: false)
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!-- Header-part-start -->
+    @await Component.InvokeAsync("Header")
+    <!-- Header-part-end -->
+    @RenderBody()
+    <!-- Footer-part-start -->
+    @await Component.InvokeAsync("Footer")
+    <!-- Footer-part-end -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/assets/lib/wow/wow.min.js"></script>
+    <script src="~/assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/f53cdaa4b1.js" crossorigin="anonymous"></script>
+    <script src="~/assets/js/home/home.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

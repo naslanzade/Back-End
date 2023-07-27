@@ -1,0 +1,58 @@
+﻿@model FooterVM
+
+<!-- Footer-part-start -->
+<footer>
+    <section id="logo-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="img">
+                        <a asp-controller="Home" asp-action="Index"><img src="~/assets/images/@Model.Settings["Logo"]" alt=""></a>
+                        <p class="slogan">Music For EveryOne</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="links">
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a asp-controller="Event" asp-action="Index">Events</a></li>
+                            <li><a asp-controller="Blog" asp-action="Index">Blogs</a></li>
+                            <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="info">
+                        <p>Copyright © 2023 One Sound. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</footer>
+<!-- Footer-part-end -->

@@ -1,0 +1,81 @@
+﻿@model ContactVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/contact/contact.css">
+}
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="event wow fadeInUp" data-wow-delay="100ms">
+                <h2>Contact</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-3">
+                    <div class="content wow fadeInUp" data-wow-delay="100ms">
+                        <div class="title">
+                            <h5>Contact info</h5>
+                        </div>
+
+                        <div class="contact mt-4">
+                            <div class="map">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </div>
+                            <p>@Model.Settings["Address"]</p>
+                        </div>
+
+                        <div class="contact mt-4">
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <p>@Model.Settings["Phone"]</p>
+                        </div>
+
+                        <div class="contact mt-4">
+                            <div class="mail">
+                                <i class="fa-solid fa-envelope-circle-check"></i>
+                            </div>
+                            <p>@Model.Settings["Email"]</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="map-area wow fadeInUp" data-wow-delay="100ms">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.89542910652!2d-3.67953665!3d40.4379543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2saz!4v1689436724982!5m2!1sen!2saz"
+                                width="850" height="350" style="border:0;" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn" class="mt-4">
+        <div class="btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+@section Scripts{
+    <script src="~/assets/js/contact/contact.js"></script>
+}
+

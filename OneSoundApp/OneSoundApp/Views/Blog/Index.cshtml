@@ -1,0 +1,100 @@
+﻿@model BlogVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/news/news.css">
+}
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="event wow fadeInUp" data-wow-delay="100ms">
+                <h2>Blogs</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-9">
+
+                    @foreach (var blog in Model.PaginatedDatas.Datas)
+                    {
+                        <div class="blog wow fadeInUp" data-wow-delay="100ms">
+                            <div class="img">
+                                <a href="#"><img src="~/assets/images/@blog.Image" alt=""></a>
+                            </div>
+                            <div class="blog-content">
+                                <a href="#" class="title">@blog.Title</a>
+                                <div class="post">
+                                    <p class="post-author">By<a href="#"> @blog.Author.Name</a></p>
+                                    <p class="tags">in<a href="#"> @blog.Category.Name</a></p>
+                                    <p class="date"><a href="#"> @blog.CreatedDate.ToString("MMMM dd, yyyy")</a></p>
+                                </div>
+                                <p>
+                                    @blog.Description
+                                </p>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="page mt-3">
+                        <nav>
+                            <ul class="pagination">
+
+                                @for (int i = 1; i <= Model.PaginatedDatas.TotalPage; i++)
+                                {
+                                    <li class="page-item @(Model.PaginatedDatas.CurrentPage == i ? "disabled && active" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+
+                                }
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <div class="blog-sidebar">
+                        <div class="widget wow fadeInUp" data-wow-delay="100ms">
+                            <div class="title">
+                                <h5>Categories</h5>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    @foreach (var item in Model.Categories)
+                                    {
+                                        <li><a asp-controller="Shop" asp-action="Index">@item.Name</a></li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        @foreach (var item in Model.Adverts)
+                        {
+                            <div class="widget mt-5 wow fadeInUp" data-wow-delay="100ms">
+                                <a href=""><img src="~/assets/images/@item.Image" alt=""></a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn">
+        <div class="btn ">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+@section Scripts {
+    <script src="~/assets/js/news/news.js"></script>
+}
+

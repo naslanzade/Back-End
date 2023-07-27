@@ -1,0 +1,266 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Main-part-start -->
+<main>
+    <section id="hero-part">
+        <div class="slides owl-carousel owl-theme">
+            @foreach (var slider in Model.Sliders)
+            {
+                <div class="bg-img">
+                    <img src="~/assets/images/@slider.Image" alt="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text-part">
+                                    <h6 class="albums wow fadeInUp" data-wow-delay="100ms">@slider.Title</h6>
+                                    <h2 class="time wow fadeInUp" data-wow-delay="300ms">@slider.Header</h2>
+                                    <button class="wow fadeInUp" data-wow-delay="500ms">
+                                        <a asp-controller="Shop" asp-action="Index">
+                                            Discover<i class="fa-solid fa-angles-right"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            }
+
+        </div>
+    </section>
+
+    <section id="latest-albums-area">
+        <div class="container wow fadeInUp" data-wow-delay="100ms">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading">
+                        <p>See what’s new</p>
+                        <h2>LATEST ALBUMS</h2>
+                    </div>
+                </div>
+                <div class="albums owl-carousel owl-theme">
+
+                    @foreach (var album in Model.Albums)
+                    {
+                        <a href="./productDetail.html">
+                            <div class="card people">
+                                <img src="~/assets/images/@album.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                <h5 class="artist">@album.Singer.Name</h5>
+                                <span class="text">@album.AlbumName</span>
+                                <div class="image-hover d-none">
+                                    <span class="cost">$@album.Price</span>
+                                    <h5 class="artist">@album.Singer.Name</h5>
+                                    <span class="text">@album.AlbumName</span>
+                                    <div class="icons">
+                                        <form>
+                                            <button type="submit" class="wish">
+                                                <i class="fa-solid fa-heart heart"></i>
+                                            </button>
+                                        </form>
+                                        <form>
+                                            <button type="submit" class="cart">
+                                                <i class="fa-solid fa-basket-shopping basket"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    }
+                </div>
+                <div class="col-12">
+                    <div class="button-part">
+                        <button><a asp-controller="Shop" asp-action="Index">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="new">
+        <div class="container wow fadeInUp" data-wow-delay="100ms">
+            <div class="row">
+                <div class="col-12">
+                    <div class="heading">
+                        <p>See what’s new</p>
+                        <h2>NEW HITS</h2>
+                    </div>
+                </div>
+
+                @foreach (var song in Model.Songs)
+                {
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a href="">
+                            <div class="card people mt-4">
+                                <img src="~/assets/images/@song.Image" alt="">
+                                <h5 class="artist">@song.Singer.Name</h5>
+                                <span class="text">@song.SongName</span>
+                                <div class="image-hover d-none">
+                                    <span class="cost">$@song.Price</span>
+                                    <h5 class="artist">@song.Singer.Name</h5>
+                                    <span class="text">@song.SongName</span>
+                                    <div class="icons">
+                                        <form>
+                                            <button type="submit" class="wish">
+                                                <i class="fa-solid fa-heart heart"></i>
+                                            </button>
+                                        </form>
+                                        <form>
+                                            <button type="submit" class="cart">
+                                                <i class="fa-solid fa-basket-shopping basket"></i>
+                                            </button>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                }
+                <div class="col-12">
+                    <div class="button-part">
+                        <button><a asp-controller="Shop" asp-action="Index">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="heading wow fadeInUp" data-wow-delay="100ms">
+                    <p>See what’s new</p>
+                    <h2>LATEST EVENTS</h2>
+                </div>
+
+                @foreach (var item in Model.Events)
+                {
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                            <div class="image">
+                                <img src="~/assets/images/@item.Image" alt="">
+                            </div>
+                            <div class="text-part">
+                                <h4>@item.EventName</h4>
+                                <div class="part">
+                                    <a href="#" class="event-place">@item.Location</a>
+                                    <a href="#" class="event-date">@item.CreatedDate.ToString("MMMM dd, yyyy")</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <div class="col-12">
+                    <div class="button-part my-5">
+                        <button><a asp-controller="Event" asp-action="Index">See more<i class="fa-solid fa-angles-right"></i></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="various">
+        <div class="container wow fadeInUp" data-wow-delay="100ms">
+            <div class="row">
+
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="weeks-top">
+                        <div class="heading">
+                            <p>See what’s new</p>
+                            <h2>This week’s top</h2>
+                        </div>
+
+                        @foreach (var item in Model.TopAlbums)
+                        {
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="~/assets/images/@item.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>@item.Singer.Name</h6>
+                                    <p>@item.AlbumName</p>
+                                </div>
+                            </div>
+
+                        }
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="weeks-hits">
+                        <div class="heading">
+                            <p>See what’s new</p>
+                            <h2>New Hits</h2>
+                        </div>
+
+                        @foreach (var item in Model.TopSongs)
+                        {
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="~/assets/images/@item.Image" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <h6>@item.Singer.Name</h6>
+                                    <p>@item.SongName</p>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-4 col-md-4">
+                    <div class="weeks-artist">
+                        <div class="heading">
+                            <p>See what’s new</p>
+                            <h2>Popular Artist</h2>
+                        </div>
+
+                        @foreach (var item in Model.Singers)
+                        {
+                            <div class="main-part wow fadeInUp" data-wow-delay="100ms">
+                                <div class="image">
+                                    <img src="~/assets/images/@item.Image" alt="">
+                                </div>
+                                <div class="text-part">
+                                    <p>@item.Name</p>
+                                </div>
+                            </div>
+                        }
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="bg-image">
+            <div class="data  wow fadeInUp" data-wow-delay="100ms">
+                <p>See what’s new</p>
+                <h2>Get in touch</h2>
+                <form action="">
+                    <input type="email" placeholder="E-mail">
+                    <button><a href="">Send<i class="fa-solid fa-angles-right"></i></a></button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="scrollBtn">
+        <div class="btn ">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->

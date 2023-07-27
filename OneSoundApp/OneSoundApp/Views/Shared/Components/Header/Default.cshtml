@@ -1,0 +1,112 @@
+﻿@model HeaderVM
+
+<!-- Header-part-start -->
+<header>
+    <section id="nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a asp-controller="Home" asp-action="Index"><img src="~/assets/images/@Model.Settings["Logo"]" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="nav-area">
+                        <div class="list">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index" class="home">Home</a></li>
+                                <li><a asp-controller="Shop" asp-action="Index" class="album">Shop</a></li>
+                                <li><a asp-controller="Event" asp-action="Index" class="events">Events</a></li>
+                                <li><a asp-controller="Blog" asp-action="Index" class="news">Blogs</a></li>
+                                <li><a asp-controller="Contact" asp-action="Index" class="contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="log">
+                        <div class="list">
+                            <ul>
+                                <li><a href="login.html" class="register">Login / Register</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="shop">
+                        <div class="list">
+                            <div class="wishlist">
+                                <a href="wishlist.html">
+                                    <div class="wish">
+                                        <sup class="wishlist-sup">0</sup>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="cartlist">
+                                <a href="basket.html">
+                                    <div class="cart">
+                                        <sup class="cart-sup">0</sup>
+                                        <i class="fa-solid fa-basket-shopping shopping"></i>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nav-phone">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 logo">
+                    <i class="fa-solid fa-bars open"></i>
+                    <a asp-controller="Home" asp-action="Index"><img src="~/assets/images/logo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sidebar hide">
+        <div class="sidebar-set">
+            <div class="close-part">
+                <i class="fa-solid fa-x close"></i>
+            </div>
+            <div class="tab-menu">
+                <div class="infos">
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index" class="home">Home</a></li>
+                        <li><a href="shop.html" class="albums">Shop</a></li>
+                        <li><a asp-controller="Event" asp-action="Index" class="events">Events</a></li>
+                        <li><a asp-controller="Blog" asp-action="Index" class="news">Blogs</a></li>
+                        <li><a asp-controller="Contact" asp-action="Index" class="contact">Contact</a></li>
+                        <li><a href="login.html" class="register">Login / Register</a></li>
+                        <li class="shop">
+                            <a href="wishlist.html" class="wishlist">
+                                <div class="wish">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                            </a>
+                            <a href="basket.html" class="cartlist">
+                                <div class="cart">
+                                    <i class="fa-solid fa-basket-shopping shopping"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+</header>
+<!-- Header-part-end -->

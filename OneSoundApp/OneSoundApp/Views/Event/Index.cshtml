@@ -1,0 +1,68 @@
+﻿@model EventVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/events/events.css">
+}
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="event wow fadeInUp" data-wow-delay="100ms">
+                <h2>Events</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <div class="row" id="parent">
+                @foreach (var item in Model.Events)
+                {
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="event-area my-5 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="image">
+                                <img src="~/assets/images/@item.Image" alt="">
+                            </div>
+                            <div class="text-part">
+                                <h4>@item.EventName</h4>
+                                <div class="part">
+                                    <a href="#" class="event-place">@item.Location</a>
+                                    <a href="#" class="event-date">@item.CreatedDate.ToString("MMMM dd, yyyy")</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="bg-image mt-5">
+            <div class="data  wow fadeInUp" data-wow-delay="100ms">
+                <p>See what’s new</p>
+                <h2>Get in touch</h2>
+                <form action="">
+                    <input type="email" placeholder="E-mail">
+                    <button><a href="">Send<i class="fa-solid fa-angles-right"></i></a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn">
+        <div class="btn ">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+@section Scripts{
+    <script src="~/assets/js/events/events.js"></script>
+}
+
