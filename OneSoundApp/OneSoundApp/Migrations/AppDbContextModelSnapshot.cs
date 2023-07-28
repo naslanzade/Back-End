@@ -400,6 +400,10 @@ namespace OneSoundApp.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -538,6 +542,108 @@ namespace OneSoundApp.Migrations
                     b.HasIndex("PlaylistId");
 
                     b.ToTable("PlaylistSongs");
+                });
+
+            modelBuilder.Entity("OneSoundApp.Models.Podcast", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("SoftDelete")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Podcast");
+                });
+
+            modelBuilder.Entity("OneSoundApp.Models.PodcastImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsMain")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("PodcastId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SoftDelete")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PodcastId");
+
+                    b.ToTable("PodcastImage");
+                });
+
+            modelBuilder.Entity("OneSoundApp.Models.Record", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PodcastId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SoftDelete")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PodcastId");
+
+                    b.ToTable("Record");
                 });
 
             modelBuilder.Entity("OneSoundApp.Models.Setting", b =>
@@ -795,6 +901,43 @@ namespace OneSoundApp.Migrations
                     b.Navigation("Playlist");
                 });
 
+            modelBuilder.Entity("OneSoundApp.Models.Podcast", b =>
+                {
+                    b.HasOne("OneSoundApp.Models.Author", "Author")
+                        .WithMany("Podcast")
+                        .HasForeignKey("AuthorId");
+
+                    b.HasOne("OneSoundApp.Models.Category", "Category")
+                        .WithMany("Podcasts")
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("Author");
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("OneSoundApp.Models.PodcastImage", b =>
+                {
+                    b.HasOne("OneSoundApp.Models.Podcast", "Podcast")
+                        .WithMany("Images")
+                        .HasForeignKey("PodcastId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Podcast");
+                });
+
+            modelBuilder.Entity("OneSoundApp.Models.Record", b =>
+                {
+                    b.HasOne("OneSoundApp.Models.Podcast", "Podcast")
+                        .WithMany("Records")
+                        .HasForeignKey("PodcastId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Podcast");
+                });
+
             modelBuilder.Entity("OneSoundApp.Models.Song", b =>
                 {
                     b.HasOne("OneSoundApp.Models.Album", "Album")
@@ -824,6 +967,8 @@ namespace OneSoundApp.Migrations
             modelBuilder.Entity("OneSoundApp.Models.Author", b =>
                 {
                     b.Navigation("Blog");
+
+                    b.Navigation("Podcast");
                 });
 
             modelBuilder.Entity("OneSoundApp.Models.Category", b =>
@@ -833,6 +978,8 @@ namespace OneSoundApp.Migrations
                     b.Navigation("Blog");
 
                     b.Navigation("Playlists");
+
+                    b.Navigation("Podcasts");
                 });
 
             modelBuilder.Entity("OneSoundApp.Models.Playlist", b =>
@@ -840,6 +987,13 @@ namespace OneSoundApp.Migrations
                     b.Navigation("Images");
 
                     b.Navigation("Songs");
+                });
+
+            modelBuilder.Entity("OneSoundApp.Models.Podcast", b =>
+                {
+                    b.Navigation("Images");
+
+                    b.Navigation("Records");
                 });
 
             modelBuilder.Entity("OneSoundApp.Models.Singer", b =>

@@ -1,0 +1,148 @@
+﻿@model PlaylistVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/playlist/playlist.css">
+}
+
+
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="event wow fadeInUp" data-wow-delay="100ms">
+                <h2>Playlists</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="settings">
+        <div class="all">
+            <div class="button">
+                <i class="fa-regular fa-square-caret-right"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div class="all">
+            <div class="container">
+                <div class="row">
+                    <div class="col3">
+                        <div class="left-part">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="category">
+                                        <span><a href="">Playlists</a></span>
+                                    </div>
+                                </div>
+                                <div class="widget mt-5 wow fadeInUp" data-wow-delay="100ms">
+                                    <a href=""><img src="~/assets/images/add2.gif" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col9">
+
+                        @foreach (var item in Model.PaginatedDatas.Datas)
+                        {
+                            <a href="">
+                                <div class="each-cards">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3 col-6">
+                                                <div class="left">
+                                                    <img src="~/assets/images/@item.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 order-last">
+                                                <div class="middle">
+                                                    <span>@item.Name</span>
+                                                    <h2>"@item.Name"</h2>
+                                                    <p>@item.Description</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-6 order-md-last order-lg-last">
+                                                <div class="right">
+                                                    <span>$@item.Price</span>
+                                                    <p>@item.SongCount songs</p>
+                                                    <div class="icons">
+                                                        <div class="left-icon">
+                                                            <form action="">
+                                                                <button type="submit">
+                                                                    <i class="fa-solid fa-basket-shopping"></i>
+                                                                </button>
+                                                                <span>cart</span>
+                                                            </form>
+                                                        </div>
+                                                        <div class="right-icon">
+                                                            <form action="">
+                                                                <button type="submit">
+                                                                    <i class="fa-regular fa-heart"></i>
+                                                                    <span>wishlist</span>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+
+
+                        <div class="page mt-3">
+                            <nav>
+                                <ul class="pagination">
+                                    @for (int i = 1; i <= Model.PaginatedDatas.TotalPage; i++)
+                                    {
+                                        <li class="page-item @(Model.PaginatedDatas.CurrentPage == i ? "disabled && active" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="filter-for-phone">
+        <div class="all hide-filter">
+            <div class="container">
+                <div class="col3">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="category">
+                                <span><a href="">Playlists</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget mt-5 wow fadeInUp" data-wow-delay="100ms">
+                        <a href=""><img src="~/assets/images/add2.gif" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn">
+        <div class="btn ">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+@section Scripts {
+    <script src="~/assets/js/playlist/playlist.js"></script>
+}
+

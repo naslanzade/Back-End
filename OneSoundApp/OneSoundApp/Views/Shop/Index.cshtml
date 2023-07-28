@@ -3,203 +3,93 @@
     ViewData["Title"] = "Index";
 }
 
+
 @section Css{
     <link rel="stylesheet" href="~/assets/scss/shop/shop.css">
 }
+
 
 <!-- Main-part-start -->
 <main>
     <section id="bg-img">
         <div class="img">
             <div class="event wow fadeInUp" data-wow-delay="100ms">
-                <h2>Albums</h2>
-            </div>
-        </div>
-    </section>
-
-    <section id="settings">
-        <div class="all">
-            <div class="button">
-                <i class="fa-regular fa-square-caret-right"></i>
+                <h2>Shop</h2>
             </div>
         </div>
     </section>
 
     <section id="shop">
-        <div class="all">
-            <div class="container">
-                <div class="row">
-                    <div class="col3">
-                        <div class="left-part">
-                            <div class="accordion">
-
-                                @foreach (var item in Model.Categories)
-                                {
-                                    <div class="accordion-item">
-                                        <div class="category">
-                                            <span><a href="" data-id="@item.Id">@item.Name</a></span>
-                                        </div>
-                                    </div>
-
-                                }                              
-                              
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 my-3">
+                    <div class="shop-area">
+                        <div class="image">
+                            <img src="~/assets/images/podcast.jpg" alt="">
+                        </div>
+                        <div class="text-part">
+                            <h6>Click for discover podcasts</h6>
+                            <div class="button-part">
+                                <button><a asp-controller="Podcast" asp-action="Index">Discover<i class="fa-solid fa-angles-right"></i></a></button>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="col9">
-                        @foreach (var item in Model.PaginatedData.Datas)
-                        {
-                            <a href="">
-                                <div class="each-cards d-none" data-id="@item.CategoryId">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-3 col-6">
-                                                <div class="left">
-                                                    <img src="~/assets/images/@item.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 order-last">
-                                                <div class="middle">
-                                                    <span>@item.Name</span>
-                                                    <h2>@item.PlaylistName</h2>
-                                                    <p>@item.Description</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-6 order-md-last order-lg-last">
-                                                <div class="right">
-                                                    <span>$@item.Price</span>
-                                                    <p>@item.SongCount songs</p>
-                                                    <div class="icons">
-                                                        <div class="left-icon">
-                                                            <form action="">
-                                                                <button type="submit">
-                                                                    <i class="fa-solid fa-basket-shopping"></i>
-                                                                </button>
-                                                                <span>cart</span>
-                                                            </form>
-                                                        </div>
-                                                        <div class="right-icon">
-                                                            <form action="">
-                                                                <button type="submit">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                    <span>wishlist</span>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        }
-
-
-                        @foreach (var item in Model.PaginatedDatas.Datas)
-                        {
-                            <a href="">
-                                <div class="each-cards" data-id="@item.CategoryId">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-3 col-md-3 col-6">
-                                                <div class="left">
-                                                    <img src="~/assets/images/@item.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 order-last">
-                                                <div class="middle">
-                                                    <span>@item.SingerName</span>
-                                                    <h2>@item.AlbumName</h2>
-                                                    <p>@item.Description</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3 col-6 order-md-last order-lg-last">
-                                                <div class="right">
-                                                    <span>$@item.Price</span>
-                                                    <p>@item.SongCount songs</p>
-                                                    <div class="icons">
-                                                        <div class="left-icon">
-                                                            <form action="">
-                                                                <button type="submit">
-                                                                    <i class="fa-solid fa-basket-shopping"></i>
-                                                                </button>
-                                                                <span>cart</span>
-                                                            </form>
-                                                        </div>
-                                                        <div class="right-icon">
-                                                            <form action="">
-                                                                <button type="submit">
-                                                                    <i class="fa-regular fa-heart"></i>
-                                                                    <span>wishlist</span>
-                                                                </button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        }
-
-                        @if (Model.PaginatedDatas.Datas ==Model.PaginatedDatas.Datas)
-                        {
-                            <div class="page mt-3">
-                                <nav>
-                                    <ul class="pagination" data-id="@Model.PaginatedDatas">
-                                        @for (int i = 1; i <= Model.PaginatedDatas.TotalPage; i++)
-                                        {
-                                            <li class="page-item @(Model.PaginatedDatas.CurrentPage == i ? "disabled && active" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
-
-                                        }
-                                    </ul>
-                                </nav>
-                            </div>
-                        }
-                        else
-                        {
-                            <div class="page mt-3">
-                                <nav>
-                                    <ul class="pagination">
-                                        @for (int i = 1; i <= Model.PaginatedData.TotalPage; i++)
-                                        {
-                                            <li class="page-item @(Model.PaginatedData.CurrentPage == i ? "disabled && active" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
-
-                                        }
-                                    </ul>
-                                </nav>
-                            </div>
-
-                        }
-                       
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="filter-for-phone">
-        <div class="all hide-filter">
-            <div class="container">
-                <div class="col3">
-                    <div class="accordion">
-
-                        @foreach (var item in Model.Categories)
-                        {
-                            <div class="accordion-item">
-                                <div class="category">
-                                    <span><a href="" data-id="@item.Id">@item.Name</a></span>
-                                </div>
+                <div class="col-12 col-md-6 col-lg-4 my-3">
+                    <div class="shop-area">
+                        <div class="image">
+                            <img src="~/assets/images/album1.jpg" alt="">
+                        </div>
+                        <div class="text-part">
+                            <h6>Click for discover albums</h6>
+                            <div class="button-part">
+                                <button><a asp-controller="Album" asp-action="Index">Discover<i class="fa-solid fa-angles-right"></i></a></button>
                             </div>
-
-                        }               
+                        </div>
                     </div>
-               
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 my-3">
+                    <div class="shop-area">
+                        <div class="image">
+                            <img src="~/assets/images/playlist.jpg" alt="">
+                        </div>
+                        <div class="text-part">
+                            <h6>Click for discover playlists</h6>
+                            <div class="button-part">
+                                <button><a asp-controller="Playlist" asp-action="Index">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 my-3">
+                    <div class="shop-area">
+                        <div class="image">
+                            <img src="~/assets/images/hit.jpg" alt="">
+                        </div>
+                        <div class="text-part">
+                            <h6>Click for discover hits</h6>
+                            <div class="button-part">
+                                <button><a href="">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 my-3">
+                    <div class="shop-area">
+                        <div class="image">
+                            <img src="~/assets/images/event.jpg" alt="">
+                        </div>
+                        <div class="text-part">
+                            <h6>Click for discover events</h6>
+                            <div class="button-part">
+                                <button><a asp-controller="Event" asp-action="Index">Discover<i class="fa-solid fa-angles-right"></i></a></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -212,8 +102,6 @@
     </section>
 </main>
 <!-- Main-part-end -->
-@section Scripts{
+@section Scripts {
     <script src="~/assets/js/shop/shop.js"></script>
-    <script src="~/assets/js/common.js"></script>
 }
-

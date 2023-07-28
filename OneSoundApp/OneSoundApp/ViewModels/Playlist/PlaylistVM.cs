@@ -1,19 +1,13 @@
-﻿using OneSoundApp.Models;
+﻿using OneSoundApp.Helpers;
+using OneSoundApp.Models;
 
 namespace OneSoundApp.ViewModels.Playlist
 {
     public class PlaylistVM
     {
-        public int Id { get; set; }
-        public string PlaylistName { get; set; }
-        public string Name { get; set; }
-         public ICollection<PlaylistSong> Songs { get; set; } 
-        public ICollection<PlaylistImage> Images { get; set; }
-        public int CategoryId { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
-
-        public int SongCount { get; set; }
+        public List<Models.Playlist> Playlists { get; set; }
+        public List<Advert> Adverts { get; set; }
+        public Paginate<Models.Playlist> PaginatedDatas { get; set; }
 
     }
 }

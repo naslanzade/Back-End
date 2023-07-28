@@ -25,6 +25,10 @@ namespace OneSoundApp.Data
         public DbSet<PlaylistSong> PlaylistSongs { get; set; }
         public DbSet<PlaylistImage> PlaylistImages { get; set; }
 
+        public DbSet<Podcast> Podcast { get; set; }
+        public DbSet<PodcastImage> PodcastImage { get; set; }
+        public DbSet<Record> Record { get; set; }
+
 
 
 
@@ -44,6 +48,9 @@ namespace OneSoundApp.Data
             modelBuilder.Entity<Category>().HasQueryFilter(m => !m.SoftDelete);
             modelBuilder.Entity<Blog>().HasQueryFilter(m => !m.SoftDelete);
             modelBuilder.Entity<Advert>().HasQueryFilter(m => !m.SoftDelete);
+            modelBuilder.Entity<Podcast>().HasQueryFilter(m => !m.SoftDelete);
+            modelBuilder.Entity<PodcastImage>().HasQueryFilter(m => !m.SoftDelete);
+            modelBuilder.Entity<Record>().HasQueryFilter(m => !m.SoftDelete);
 
 
             modelBuilder.Entity<Album>()

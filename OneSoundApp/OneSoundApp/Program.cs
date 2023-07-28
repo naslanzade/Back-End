@@ -50,6 +50,7 @@ builder.Services.AddScoped<IAlbumService, AlbumService>();
 builder.Services.AddScoped<ISongService, SongService>();
 builder.Services.AddScoped<ISingerService, SingerService>();
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
+builder.Services.AddScoped<IPodcastService, PodcastService>();
 
 
 
