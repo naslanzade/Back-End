@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oDn2bE91ouWfKKofCmhH8pHUIU5N+exCNVOu4lBlKZc=",
+  "Hash": "U0KrA1YpMMksZy2Ih8qnTxhLq3ftvoJwQGH5RL7Aq4g=",
   "Source": "OneSoundApp",
   "BasePath": "_content/OneSoundApp",
   "Mode": "Default",
@@ -340,6 +340,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\avatar the weeknd.jpg"
     },
     {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\basta.jpg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/basta.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\basta.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\beyonce.jpg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/beyonce.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\beyonce.jpg"
+    },
+    {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\bg-1.jpg",
       "SourceId": "OneSoundApp",
       "SourceType": "Discovered",
@@ -425,6 +459,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog.png"
     },
     {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\blog.webp",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/blog.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\blog.webp"
+    },
+    {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\breadcumb.jpg",
       "SourceId": "OneSoundApp",
       "SourceType": "Discovered",
@@ -493,6 +544,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\coldplay.jpg"
     },
     {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\dictators.jpeg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/dictators.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\dictators.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\drake.jpg",
       "SourceId": "OneSoundApp",
       "SourceType": "Discovered",
@@ -525,6 +593,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\drake1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e3.jpg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/e3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\e3.jpg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e7.jpg",
@@ -627,6 +712,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\event.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\fa.jpg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/fa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\fa.jpg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\festival.jpg",
@@ -763,6 +865,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\hajime-yamakasi.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\hattori.jpeg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/hattori.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\hattori.jpeg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\hit.jpg",
@@ -1341,6 +1460,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\basket\\basket.js"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\common.js",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/js/common.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\common.js"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\contact\\contact.js",

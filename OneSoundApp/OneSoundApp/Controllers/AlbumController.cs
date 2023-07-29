@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OneSoundApp.Helpers;
 using OneSoundApp.Models;
-using OneSoundApp.Services;
 using OneSoundApp.Services.Interfaces;
 using OneSoundApp.ViewModels.Albums;
-using OneSoundApp.ViewModels.Blog;
+
 
 namespace OneSoundApp.Controllers
 {
@@ -43,11 +42,36 @@ namespace OneSoundApp.Controllers
         }
 
 
+
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Album album= await _albumService.GetPodcastDetailAsync(id);
+
+            if (album == null) return NotFound();
+
+            AlbumDetailVM model = new()
+            {
+
+                Id=album.Id,
+                AlbumName=album.AlbumName,
+                Price=album.Price,
+                Songs=album.Song.ToList(),
+                Images=album.Images.ToList(),
+                SingerName=album.Singer.Name
+
+            };
+
+            return View(model);
+        }
+
+
         private async Task<int> GetPageCountAsync(int take)
         {
-            var blogCount = await _albumService.GetCountAsync();
+            var albumCount = await _albumService.GetCountAsync();
 
-            return (int)Math.Ceiling((decimal)blogCount / take);
+            return (int)Math.Ceiling((decimal)albumCount / take);
         }
 
      

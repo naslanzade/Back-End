@@ -50,7 +50,7 @@
 
                         @foreach (var item in Model.PaginatedDatas.Datas)
                         {
-                            <a href="">
+                            <a asp-controller="Album" asp-action="Detail" asp-route-id="@item.Id">
                                 <div class="each-cards">
                                     <div class="container">
                                         <div class="row">

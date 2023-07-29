@@ -46,7 +46,7 @@
 
                     @foreach (var album in Model.Albums)
                     {
-                        <a href="./productDetail.html">
+                        <a asp-controller="Album" asp-action="Detail" asp-route-id="@album.Id">
                             <div class="card people">
                                 <img src="~/assets/images/@album.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                 <h5 class="artist">@album.Singer.Name</h5>

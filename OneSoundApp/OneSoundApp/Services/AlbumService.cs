@@ -37,6 +37,15 @@ namespace OneSoundApp.Services
                                         Take(take).ToListAsync();
         }
 
+        public async Task<Album> GetPodcastDetailAsync(int? id)
+        {
+            return await _context.Albums.Include(m=>m.Images).
+                                         Include(m=>m.Song).
+                                         Include(m=>m.Singer).
+                                         Include(m=>m.Category).
+                                         FirstOrDefaultAsync(m=>m.Id==id);
+        }
+
         public async Task<IEnumerable<Album>> GetTopAlbumAsync()
         {
             return await _context.Albums.Include(m => m.Images).

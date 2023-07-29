@@ -26,8 +26,18 @@ namespace OneSoundApp.Services
             return await _context.Podcast.Include(m => m.Images).
                                        Include(m => m.Author).
                                        Include(m => m.Category).
+                                       Include(m => m.Records).
                                        Skip((page * take) - take).
                                        Take(take).ToListAsync();
+        }
+
+        public async Task<Podcast> GetPodcastDetailAsync(int? id)
+        {
+            return await _context.Podcast.Include(m => m.Images).
+                                        Include(m => m.Author).
+                                        Include(m=>m.Records).
+                                        Include(m => m.Category).
+                                        FirstOrDefaultAsync(m => m.Id == id);
         }
     }
 }

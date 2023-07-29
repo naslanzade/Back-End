@@ -42,11 +42,33 @@ namespace OneSoundApp.Controllers
         }
 
 
+        public async Task<IActionResult> Detail(int? id)
+        {
+
+            if (id == null) return BadRequest();
+
+            Playlist playlist =await _playlistService.GetPodcastDetailAsync(id);
+
+            if(playlist == null) return BadRequest();
+
+            PlaylistDetailVM model = new()
+            {
+                Id=playlist.Id,
+                Name=playlist.Name,
+                Images=playlist.Images.ToList(),
+                Songs=playlist.Songs.ToList(),
+                Price=playlist.Price,
+            };
+
+            return View(model);
+        }
+
+
         private async Task<int> GetPageCountAsync(int take)
         {
-            var blogCount = await _playlistService.GetCountAsync();
+            var playlistCount = await _playlistService.GetCountAsync();
 
-            return (int)Math.Ceiling((decimal)blogCount / take);
+            return (int)Math.Ceiling((decimal)playlistCount / take);
         }
     }
 }

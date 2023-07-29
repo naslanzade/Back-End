@@ -1,0 +1,104 @@
+﻿@model AlbumDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/productDetail/productDetai.css">
+}
+
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="event wow fadeInUp" data-wow-delay="100ms">
+                <h2>Details</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="left-img wow fadeInUp" data-wow-delay="100ms">
+                        <img class="mainImg" src="~/assets/images/@Model.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                        <div class="down-img">
+                            @foreach (var item in Model.Images)
+                            {
+                                <div class="item wow fadeInUp" data-wow-delay="100ms">
+                                    <img src="~/assets/images/@item.Image" alt="">
+                                </div>
+                            }
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="right">
+                        <div class="right-side wow fadeInUp" data-wow-delay="100ms">
+                            <h2>"@Model.AlbumName"</h2>
+                            <p class="name">@Model.SingerName</p>
+                            <div class="data">
+
+                                @foreach (var item in Model.Songs)
+                                {
+                                    <p><i class="fa-brands fa-spotify"></i>@item.SongName</p>
+                                }
+                            </div>
+                        </div>
+
+                        <div class="left-side">
+                            <span>$@Model.Price</span>
+                            <div class="social-media wow fadeInUp" data-wow-delay="100ms">
+                                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram"></i></a>
+                            </div>
+                            <div class="icons wow fadeInUp" data-wow-delay="100ms">
+                                <div class="left-icon">
+                                    <form action="">
+                                        <button type="submit">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </button>
+                                        <span>cart</span>
+                                    </form>
+                                </div>
+                                <div class="right-icon">
+                                    <form action="">
+                                        <button type="submit">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <span>wishlist</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn">
+        <div class="btn ">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+@section Scripts {
+    <script src="~/assets/js/productDetail/productDetail.js"></script>
+    <script src="~/assets/js/common.js"></script>
+
+}
+

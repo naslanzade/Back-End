@@ -877,6 +877,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\avatar the weeknd.jpg"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\basta.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\basta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\beyonce.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\beyonce.jpg"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\bg-1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\bg-1.jpg"
     },
@@ -897,6 +905,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\blog.png"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\blog.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\blog.webp"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\breadcumb.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\breadcumb.jpg"
     },
@@ -913,12 +925,20 @@
       "PackagePath": "staticwebassets\\assets\\images\\coldplay.jpg"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\dictators.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\dictators.jpeg"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\drake.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\drake.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\drake1.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\drake1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\e3.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e7.jpg",
@@ -943,6 +963,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\event.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\event.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\fa.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\fa.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\festival.jpg",
@@ -975,6 +999,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\hajime.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\hajime.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\hattori.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\hattori.jpeg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\hit.jpg",
@@ -1103,6 +1131,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\basket\\basket.js",
       "PackagePath": "staticwebassets\\assets\\js\\basket\\basket.js"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\common.js",
+      "PackagePath": "staticwebassets\\assets\\js\\common.js"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\contact\\contact.js",
