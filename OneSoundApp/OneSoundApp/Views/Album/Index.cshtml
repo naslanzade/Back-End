@@ -48,43 +48,43 @@
                     </div>
                     <div class="col9">
 
-                        @foreach (var item in Model.PaginatedDatas.Datas)
-                        {
-                            <a asp-controller="Album" asp-action="Detail" asp-route-id="@item.Id">
+                        @foreach (var album in Model.PaginatedDatas.Datas)
+                        {                            
+                            <a asp-controller="Album" asp-action="Detail" asp-route-id="@album.Id">
                                 <div class="each-cards">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-lg-3 col-md-3 col-6">
                                                 <div class="left">
-                                                    <img src="~/assets/images/@item.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                                    <img src="~/assets/images/@album.Images?.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 order-last">
                                                 <div class="middle">
-                                                    <span>@item.Singer.Name</span>
-                                                    <h2>"@item.AlbumName"</h2>
-                                                    <p>@item.Description</p>
+                                                    <span>@album.Singer.Name</span>
+                                                    <h2>"@album.AlbumName"</h2>
+                                                    <p>@album.Description</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-3 col-6 order-md-last order-lg-last">
                                                 <div class="right">
-                                                    <span>$@item.Price</span>
-                                                    <p>@item.SongCount songs</p>
+                                                    <span>$@album.Price</span>
+                                                    <p>@album.SongCount songs</p>
                                                     <div class="icons">
-                                                        <div class="left-icon">
-                                                            <form action="">
-                                                                <button type="submit">
-                                                                    <i class="fa-solid fa-basket-shopping"></i>
-                                                                </button>
-                                                                <span>cart</span>
-                                                            </form>
-                                                        </div>
-                                                        <div class="right-icon">
-                                                            <form action="">
+                                                        <div class="left-icon">                                                          
+                                                            <form id="wishlist-form" data-id="@album.Id">
                                                                 <button type="submit">
                                                                     <i class="fa-regular fa-heart"></i>
                                                                     <span>wishlist</span>
                                                                 </button>
+                                                            </form>
+                                                        </div>
+                                                        <div class="right-icon">
+                                                            <form id="basket-form" data-id="@album.Id">
+                                                                <button type="submit">
+                                                                    <i class="fa-solid fa-basket-shopping"></i>
+                                                                </button>
+                                                                <span>cart</span>
                                                             </form>
                                                         </div>
                                                     </div>
@@ -143,5 +143,8 @@
 </main>
 <!-- Main-part-end -->
 @section Scripts {
+    <script src="~/assets/js/common.js"></script>
     <script src="~/assets/js/albumShop/albumShop.js"></script>
+    <script src="~/assets/js/cart.js"></script>
+    
 }

@@ -8,5 +8,7 @@ namespace OneSoundApp.Services.Interfaces
         Task<int> GetCountAsync();
         Task<List<Song>> GetPaginatedDatas(int page, int take);
 
+        Task<Song> GetPodcastDetailAsync(int? id);
+
     }
 }

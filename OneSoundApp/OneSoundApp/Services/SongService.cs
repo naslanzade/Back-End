@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
 using OneSoundApp.Data;
 using OneSoundApp.Models;
 using OneSoundApp.Services.Interfaces;
@@ -34,6 +35,13 @@ namespace OneSoundApp.Services
                                         Include(m => m.Album).
                                         Skip((page * take) - take).
                                         Take(take).ToListAsync();
+        }
+
+        public async Task<Song> GetPodcastDetailAsync(int? id)
+        {
+            return await _context.Songs.Include(m => m.Singer).
+                                       Include(m => m.Album).
+                                       FirstOrDefaultAsync(m => m.Id == id);
         }
     }
 }

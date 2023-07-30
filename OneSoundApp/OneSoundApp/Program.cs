@@ -51,9 +51,8 @@ builder.Services.AddScoped<ISongService, SongService>();
 builder.Services.AddScoped<ISingerService, SingerService>();
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IPodcastService, PodcastService>();
-
-
-
+builder.Services.AddScoped<IWishlistService, WishlistService>();
+builder.Services.AddScoped<ICartService, CartService>();
 
 
 var app = builder.Build();

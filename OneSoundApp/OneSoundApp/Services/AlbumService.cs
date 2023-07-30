@@ -37,7 +37,7 @@ namespace OneSoundApp.Services
                                         Take(take).ToListAsync();
         }
 
-        public async Task<Album> GetPodcastDetailAsync(int? id)
+        public async Task<Album> GetAlbumDetailAsync(int? id)
         {
             return await _context.Albums.Include(m=>m.Images).
                                          Include(m=>m.Song).
@@ -53,6 +53,15 @@ namespace OneSoundApp.Services
                                        Take(4).
                                        OrderByDescending(m => m.CreatedDate).
                                        ToListAsync();
+        }
+
+        public async Task<Album> GetByIdAsnyc(int? id)
+        {
+            return await _context.Albums.FindAsync(id);
+        }
+        public async Task<Album> GetByIdWithImageAsnyc(int? id)
+        {
+            return await _context.Albums.Include(m => m.Images).FirstOrDefaultAsync(m => m.Id == id);
         }
     }
 }

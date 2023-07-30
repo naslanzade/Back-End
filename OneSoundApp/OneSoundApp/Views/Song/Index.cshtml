@@ -50,7 +50,7 @@
 
                         @foreach (var item in Model.PaginatedDatas.Datas)
                         {
-                            <a href="">
+                            <a asp-controller="Song" asp-action="Detail" asp-route-id="@item.Id">
                                 <div class="each-cards">
                                     <div class="container">
                                         <div class="row">
@@ -69,8 +69,8 @@
                                             </div>
                                             <div class="col-md-3 col-6 order-md-last order-lg-last">
                                                 <div class="right">
-                                                    <span>$@item.Price</span>                                                    
-                                                    <div class="icons">
+                                                    @*<span>$@item.Price</span>  *@                                                  
+                                                   @* <div class="icons">
                                                         <div class="left-icon">
                                                             <form action="">
                                                                 <button type="submit">
@@ -87,7 +87,7 @@
                                                                 </button>
                                                             </form>
                                                         </div>
-                                                    </div>
+                                                    </div>*@
                                                 </div>
 
                                             </div>

@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\novra\OneDrive\Desktop\Back-End\OneSoundApp\OneSoundApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/AlbumCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1DYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/AlbumWishlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1XaXNobGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Album/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +86,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Song/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ1xEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Song/Index.cshtml]

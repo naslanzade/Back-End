@@ -65,7 +65,7 @@
                             </div>
                             <div class="icons wow fadeInUp" data-wow-delay="100ms">
                                 <div class="left-icon">
-                                    <form action="">
+                                    <form id="basket-form" data-id="@Model.Id">
                                         <button type="submit">
                                             <i class="fa-solid fa-basket-shopping"></i>
                                         </button>
@@ -73,7 +73,7 @@
                                     </form>
                                 </div>
                                 <div class="right-icon">
-                                    <form action="">
+                                    <form id="wishlist-form" data-id="@Model.Id">
                                         <button type="submit">
                                             <i class="fa-regular fa-heart"></i>
                                             <span>wishlist</span>
@@ -99,6 +99,7 @@
 @section Scripts {
     <script src="~/assets/js/productDetail/productDetail.js"></script>
     <script src="~/assets/js/common.js"></script>
+    <script src="~/assets/js/cart.js"></script>
 
 }
 

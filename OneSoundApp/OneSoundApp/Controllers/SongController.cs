@@ -42,6 +42,37 @@ namespace OneSoundApp.Controllers
             return View(model);
         }
 
+
+
+        public async Task<IActionResult> Detail(int? id) 
+        {
+
+            if (id is null) return BadRequest();
+
+            Song song= await _songService.GetPodcastDetailAsync(id);
+
+            if (song == null) return NotFound();
+
+
+            SongDetailVM model = new()
+            {
+
+                Id=song.Id,
+                SongName=song.SongName,
+                AlbumName=song.Album.AlbumName,
+                SingerName=song.Singer.Name,
+                Price=song.Price,
+                Image=song.Image,
+            };
+
+
+
+
+
+            return View(model);
+        
+        }
+
         private async Task<int> GetPageCountAsync(int take)
         {
             var songCount = await _songService.GetCountAsync();

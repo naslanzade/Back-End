@@ -36,21 +36,19 @@
                     <div class="shop">
                         <div class="list">
                             <div class="wishlist">
-                                <a href="wishlist.html">
+                                <a asp-controller="AlbumWishlist" asp-action="Index">
                                     <div class="wish">
-                                        <sup class="wishlist-sup">0</sup>
+                                        <sup class="wishlist-sup">@Model.WishlistCount</sup>
                                         <i class="fa-regular fa-heart"></i>
                                     </div>
-
                                 </a>
                             </div>
                             <div class="cartlist">
-                                <a href="basket.html">
+                                <a asp-controller="AlbumCart" asp-action="Index">
                                     <div class="cart">
-                                        <sup class="cart-sup">0</sup>
+                                        <sup class="cart-sup">@Model.BasketCount</sup>
                                         <i class="fa-solid fa-basket-shopping shopping"></i>
                                     </div>
-
                                 </a>
                             </div>
                         </div>
@@ -81,13 +79,13 @@
                 <div class="infos">
                     <ul>
                         <li><a asp-controller="Home" asp-action="Index" class="home">Home</a></li>
-                        <li><a href="shop.html" class="albums">Shop</a></li>
+                        <li><a asp-controller="Shop" asp-action="Index" class="albums">Shop</a></li>
                         <li><a asp-controller="Event" asp-action="Index" class="events">Events</a></li>
                         <li><a asp-controller="Blog" asp-action="Index" class="news">Blogs</a></li>
                         <li><a asp-controller="Contact" asp-action="Index" class="contact">Contact</a></li>
                         <li><a href="login.html" class="register">Login / Register</a></li>
                         <li class="shop">
-                            <a href="wishlist.html" class="wishlist">
+                            <a asp-controller="AlbumWishlist" asp-action="Index" class="wishlist">
                                 <div class="wish">
                                     <i class="fa-regular fa-heart"></i>
                                 </div>

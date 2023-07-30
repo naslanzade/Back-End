@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OneSoundApp.Services;
 using OneSoundApp.Services.Interfaces;
 using OneSoundApp.ViewModels.Layout;
 
@@ -15,9 +16,10 @@ namespace OneSoundApp.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            FooterVM model = new()
+            FooterVM model = new FooterVM()
             {
                 Settings = _layoutService.GetSettingDatas(),
+              
 
             };
             return await Task.FromResult(View(model));

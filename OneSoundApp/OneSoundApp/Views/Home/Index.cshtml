@@ -56,12 +56,12 @@
                                     <h5 class="artist">@album.Singer.Name</h5>
                                     <span class="text">@album.AlbumName</span>
                                     <div class="icons">
-                                        <form>
+                                        <form id="wishlist-form" data-id="@album.Id">
                                             <button type="submit" class="wish">
                                                 <i class="fa-solid fa-heart heart"></i>
                                             </button>
                                         </form>
-                                        <form>
+                                        <form id="basket-form" data-id="@album.Id">
                                             <button type="submit" class="cart">
                                                 <i class="fa-solid fa-basket-shopping basket"></i>
                                             </button>
@@ -94,16 +94,16 @@
                 @foreach (var song in Model.Songs)
                 {
                     <div class="col-12 col-md-6 col-lg-3">
-                        <a href="">
+                        <a asp-controller="Song" asp-action="Detail" asp-route-id="@song.Id">
                             <div class="card people mt-4">
                                 <img src="~/assets/images/@song.Image" alt="">
                                 <h5 class="artist">@song.Singer.Name</h5>
                                 <span class="text">@song.SongName</span>
                                 <div class="image-hover d-none">
-                                    <span class="cost">$@song.Price</span>
+                                    @*<span class="cost">$@song.Price</span>*@
                                     <h5 class="artist">@song.Singer.Name</h5>
                                     <span class="text">@song.SongName</span>
-                                    <div class="icons">
+                                    @*<div class="icons">
                                         <form>
                                             <button type="submit" class="wish">
                                                 <i class="fa-solid fa-heart heart"></i>
@@ -114,7 +114,7 @@
                                                 <i class="fa-solid fa-basket-shopping basket"></i>
                                             </button>
                                         </form>
-                                    </div>
+                                    </div>*@
 
                                 </div>
                             </div>
@@ -264,3 +264,10 @@
     </section>
 </main>
 <!-- Main-part-end -->
+@section Scripts {
+   
+    <script src="~/assets/js/common.js"></script>
+    <script src="~/assets/js/cart.js"></script>
+
+
+}

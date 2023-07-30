@@ -47,7 +47,7 @@ namespace OneSoundApp.Controllers
         {
             if (id == null) return BadRequest();
 
-            Album album= await _albumService.GetPodcastDetailAsync(id);
+            Album album= await _albumService.GetAlbumDetailAsync(id);
 
             if (album == null) return NotFound();
 

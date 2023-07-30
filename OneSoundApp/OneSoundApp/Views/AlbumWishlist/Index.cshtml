@@ -1,0 +1,93 @@
+﻿@model List<WishlistAlbumDetailVM>
+@inject ILayoutService layout;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/wishlist/wishlist.css">
+}
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="event wow fadeInUp" data-wow-delay="100ms">
+                <h2>Wishlist</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="wishlist">
+        <div class="container">
+            <div class="table-area">
+                <div class="table-products">
+                    @if (Model.Count>0)
+                    {
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Option</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr data-id="#">
+                                        <td>
+                                            <img src="~/assets/images/@item.Image" alt="">
+                                        </td>
+                                        <td>@item.Name</td>
+                                        <td><span>$</span> @item.Price.ToString("0.00")</td>
+                                        <td>
+                                            <form id="wishlist-delete-form" data-id="@item.Id">
+                                                <button>
+                                                    <i class="fa-regular fa-trash-can"></i>
+                                                </button>
+                                            </form>
+
+                                        </td>
+                                    </tr>
+
+                                }
+
+                            </tbody>
+                        </table>
+                        <div class="button-part wow fadeInUp" data-wow-delay="100ms">
+                            <button><a asp-controller="Shop" asp-action="Index">Back to shop<i class="fa-solid fa-angles-right"></i></a></button>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-success-wishlist" role="alert" style="background-color: #f5f9fa;color: black;border-color: #f5f9fa;">
+                            No albums added to wishlist...
+                        </div>
+                    }
+                    <div class="alert alert-success-wishlist d-none" role="alert" style="background-color: #f5f9fa;color: black;border-color: #f5f9fa;">
+                        No albums added to wishlist...
+                    </div>
+
+                </div>            
+              
+
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn">
+        <div class="btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+@section Scripts {
+    <script src="~/assets/js/wishlist/wishlist.js"></script>
+    <script src="~/assets/js/common.js"></script>
+
+}
+
