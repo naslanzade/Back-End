@@ -27,7 +27,15 @@
                     <div class="log">
                         <div class="list">
                             <ul>
-                                <li><a href="login.html" class="register">Login / Register</a></li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li><a asp-controller="Account" asp-action="LogOut" class="register">LogOut</a></li>
+                                }
+                                else
+                                {
+                                    <li><a asp-controller="Account" asp-action="SignIn" class="register">Login / Register</a></li>
+                                }
+                               
                             </ul>
                         </div>
                     </div>
@@ -83,7 +91,14 @@
                         <li><a asp-controller="Event" asp-action="Index" class="events">Events</a></li>
                         <li><a asp-controller="Blog" asp-action="Index" class="news">Blogs</a></li>
                         <li><a asp-controller="Contact" asp-action="Index" class="contact">Contact</a></li>
-                        <li><a href="login.html" class="register">Login / Register</a></li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a asp-controller="Account" asp-action="LogOut" class="register">LogOut</a></li>
+                        }
+                        else
+                        {
+                            <li><a asp-controller="Account" asp-action="SignIn" class="register">Login / Register</a></li>
+                        }                       
                         <li class="shop">
                             <a asp-controller="AlbumWishlist" asp-action="Index" class="wishlist">
                                 <div class="wish">

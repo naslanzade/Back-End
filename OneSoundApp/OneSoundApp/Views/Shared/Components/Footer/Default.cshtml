@@ -20,7 +20,15 @@
                             <li><a asp-controller="Event" asp-action="Index">Events</a></li>
                             <li><a asp-controller="Blog" asp-action="Index">Blogs</a></li>
                             <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
-                            <li><a href="login.html">Login</a></li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><a asp-controller="Account" asp-action="LogOut">LogOut</a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-controller="Account" asp-action="SignIn">Login</a></li>
+                            }
+                            
                         </ul>
                     </div>
                 </div>

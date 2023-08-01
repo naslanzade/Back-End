@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pmWeyn3eyO/X78Fh2fZ9iTrDU4El3+9Z8qVCF5Evd2Y=",
+  "Hash": "MsII9apZF/tSfBk/QYhnubvP87UVjITrxU2zctJEWO0=",
   "Source": "OneSoundApp",
   "BasePath": "_content/OneSoundApp",
   "Mode": "Default",
@@ -7002,6 +7002,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\templates\\account.html",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "templates/account.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\account.html"
     }
   ]
 }

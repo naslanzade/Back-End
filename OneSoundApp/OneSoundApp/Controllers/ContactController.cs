@@ -15,11 +15,11 @@ namespace OneSoundApp.Controllers
         public async Task<IActionResult> Index()
         {
 
-            //ContactVM model = new()
-            //{
-            //    Settings = _layoutService.GetSettingDatas()
-            //};
-            return View();
+            ContactVM model = new()
+            {
+                Settings = _layoutService.GetSettingDatas()
+            };
+            return View(model);
         }
     }
 }

@@ -1,0 +1,81 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "SignUp";
+}
+
+
+@section Css{
+    <link rel="stylesheet" href="~/assets/scss/signup/signup.css">
+}
+
+<!-- Main-part-start -->
+<main>
+    <section id="bg-img">
+        <div class="img">
+            <div class="sign wow fadeInUp" data-wow-delay="100ms">
+                <h2>Sign Up</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="signUp">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="sign">
+                        <h3>Sign up for free</h3>
+                        <div class="content" asp-validation-summary="All">
+                            <form asp-action="SignUp" method="post">
+                                <div class="data">
+                                    <label for="name"> Full Name</label>
+                                    <input  placeholder="Enter full name" asp-for="FullName">
+                                    <span class="text-danger" asp-validation-for="FullName"></span>
+                                </div>
+                                <div class="data mt-4">
+                                    <label for="username"> Username</label>
+                                    <input placeholder="Enter username" asp-for="UserName">
+                                    <span class="text-danger" asp-validation-for="UserName"></span>
+                                </div>
+                                <div class="data mt-4">
+                                    <label for="email"> Email address</label>
+                                    <input  placeholder="Enter E-mail" asp-for="Email">
+                                    <span class="text-danger" asp-validation-for="Email"></span>
+                                </div>
+                                <div class="data mt-4">
+                                    <label for="password"> Password</label>
+                                    <input  placeholder="Password" asp-for="Password">
+                                    <span class="text-danger" asp-validation-for="Password"></span>
+                                </div>
+                                <div class="data mt-4">
+                                    <label for="password"> Confirm Password</label> 
+                                    <input placeholder="Confirm assword" asp-for="RepeatPassword">
+                                    <span class="text-danger" asp-validation-for="RepeatPassword"></span>
+                                </div>
+                                <button type="submit" class="button-part">Sign Up</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="scrollBtn" class="mt-4">
+        <div class="btn ">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
+    </section>
+</main>
+<!-- Main-part-end -->
+
+
+@section Scripts {
+    <script src="~/assets/js/common.js"></script>
+    <script src="~/assets/js/signup/signup.js"></script>
+    <script src="~/assets/js/cart.js"></script>
+    <partial name="_ValidationScriptsPartial" />
+
+}
+
+

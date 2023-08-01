@@ -4,6 +4,7 @@ using OneSoundApp.Data;
 using OneSoundApp.Models;
 using OneSoundApp.Services.Interfaces;
 using OneSoundApp.Services;
+using OneSoundApp.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,9 +37,7 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.RequireUniqueEmail = true;
 });
 
-
-
-//builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped<IEventService, EventService>();
@@ -53,6 +52,7 @@ builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IPodcastService, PodcastService>();
 builder.Services.AddScoped<IWishlistService, WishlistService>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 
 var app = builder.Build();
@@ -70,6 +70,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
