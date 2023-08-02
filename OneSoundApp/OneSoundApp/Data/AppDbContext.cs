@@ -24,11 +24,13 @@ namespace OneSoundApp.Data
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<PlaylistSong> PlaylistSongs { get; set; }
         public DbSet<PlaylistImage> PlaylistImages { get; set; }
-
         public DbSet<Podcast> Podcast { get; set; }
         public DbSet<PodcastImage> PodcastImage { get; set; }
         public DbSet<Record> Record { get; set; }
-
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartAlbum> CartAlbums { get; set; }
+        public DbSet<Wishlist> Wishlist { get; set; }
+        public DbSet<WishlistAlbum> WishlistAlbum { get; set; }
 
 
 

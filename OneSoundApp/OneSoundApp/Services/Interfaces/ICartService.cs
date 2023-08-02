@@ -10,5 +10,7 @@ namespace OneSoundApp.Services.Interfaces
         void AddProduct(List<CartVM> basket, Album product);
         Task<BasketDeleteResponse> DeleteProduct(int? id);
         int GetCount();
+        Task<Cart> GetByUserIdAsync(string userId);
+        Task<List<CartAlbum>> GetAllByCartIdAsync(int? cartId);
     }
 }

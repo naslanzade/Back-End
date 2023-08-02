@@ -1,9 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using OneSoundApp.Data;
 using OneSoundApp.Models;
 using OneSoundApp.Responses;
 using OneSoundApp.Services.Interfaces;
 using OneSoundApp.ViewModels.Cart;
+using Org.BouncyCastle.Crypto.Operators;
 
 namespace OneSoundApp.Services
 {
@@ -24,13 +26,13 @@ namespace OneSoundApp.Services
         }
         public void AddProduct(List<CartVM> basket, Album product)
         {
-            CartVM existProduct = basket.FirstOrDefault(m => m.Id == product.Id);
+            CartVM existProduct = basket.FirstOrDefault(m => m.AlbumId == product.Id);
 
             if (existProduct is null)
             {
                 basket.Add(new CartVM
                 {
-                    Id = product.Id,
+                    AlbumId = product.Id,
                     Count = 1
                 });
             }
@@ -46,7 +48,7 @@ namespace OneSoundApp.Services
         {
             List<CartVM> basketDatas = JsonConvert.DeserializeObject<List<CartVM>>(_accessor.HttpContext.Request.Cookies["basket"]);
 
-            var data = basketDatas.FirstOrDefault(m => m.Id == id);
+            var data = basketDatas.FirstOrDefault(m => m.AlbumId == id);
 
             basketDatas.Remove(data);
 
@@ -56,7 +58,7 @@ namespace OneSoundApp.Services
             foreach (var basketData in basketDatas)
             {
 
-                Album dbAlbum = await _albumService.GetByIdAsnyc(basketData.Id);
+                Album dbAlbum = await _albumService.GetByIdAsnyc(basketData.AlbumId);
                 total += (dbAlbum.Price * basketData.Count);
 
             }
@@ -80,6 +82,16 @@ namespace OneSoundApp.Services
             }
 
             return basket;
+        }
+
+        public async Task<List<CartAlbum>> GetAllByCartIdAsync(int? cartId)
+        {
+            return await _context.CartAlbums.Where(c => c.CartId == cartId).ToListAsync();
+        }
+
+        public async Task<Cart> GetByUserIdAsync(string userId)
+        {
+            return await _context.Carts.Include(c => c.CartAlbums).FirstOrDefaultAsync(c => c.AppUserId == userId);
         }
 
         public int GetCount()

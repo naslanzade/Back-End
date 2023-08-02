@@ -12,5 +12,7 @@
         public int SongCount { get; set; }
         public int? CategoryId { get; set; }
         public Category Category { get; set; }
+        public ICollection<CartAlbum> CartAlbums { get; set; }
+        public ICollection<WishlistAlbum> WishlistAlbums { get; set; }
     }
 }

@@ -36,7 +36,7 @@ namespace OneSoundApp.Controllers
                 List<CartVM> basketDatas = JsonConvert.DeserializeObject<List<CartVM>>(_accessor.HttpContext.Request.Cookies["basket"]);
                 foreach (var item in basketDatas)
                 {
-                    var dbAlbum = await _albumService.GetByIdWithImageAsnyc(item.Id);
+                    var dbAlbum = await _albumService.GetByIdWithImageAsnyc(item.AlbumId);
 
 
                     if (dbAlbum != null)

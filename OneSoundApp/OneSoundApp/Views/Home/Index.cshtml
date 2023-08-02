@@ -56,16 +56,40 @@
                                     <h5 class="artist">@album.Singer.Name</h5>
                                     <span class="text">@album.AlbumName</span>
                                     <div class="icons">
-                                        <form id="wishlist-form" data-id="@album.Id">
-                                            <button type="submit" class="wish">
-                                                <i class="fa-solid fa-heart heart"></i>
-                                            </button>
-                                        </form>
-                                        <form id="basket-form" data-id="@album.Id">
-                                            <button type="submit" class="cart">
-                                                <i class="fa-solid fa-basket-shopping basket"></i>
-                                            </button>
-                                        </form>
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <form id="wishlist-form" data-id="@album.Id">
+                                                <button type="submit" class="wish">
+                                                    <i class="fa-solid fa-heart heart"></i>
+                                                </button>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <form id="wishlist-form" data-id="@album.Id">
+                                                <button type="submit" class="wish" onclick="location.href='@Url.Action("SignIn", "Account")'">
+                                                    <i class="fa-solid fa-heart heart"></i>
+                                                </button>
+                                            </form>
+                                        }
+
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+                                            <form id="basket-form" data-id="@album.Id">
+                                                <button type="submit" class="cart">
+                                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                                </button>
+                                            </form>
+                                        }
+                                        else
+                                        {
+                                            <form id="basket-form" data-id="@album.Id">
+                                                <button type="submit" class="cart" onclick="location.href='@Url.Action("SignIn", "Account")'">
+                                                    <i class="fa-solid fa-basket-shopping basket"></i>
+                                                </button>
+                                            </form>
+                                        }
+
                                     </div>
                                 </div>
                             </div>

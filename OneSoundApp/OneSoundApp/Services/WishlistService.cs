@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using OneSoundApp.Data;
 using OneSoundApp.Models;
@@ -102,6 +103,16 @@ namespace OneSoundApp.Services
             }
 
             return wishlist.Sum(m => m.Count);
+        }
+
+        public async Task<Wishlist> GetByUserIdAsync(string userId)
+        {
+            return await _context.Wishlist.Include(c => c.WishlistAlbums).FirstOrDefaultAsync(c => c.AppUserId == userId);
+        }
+
+        public async Task<List<WishlistAlbum>> GetAllByWishlistIdAsync(int? wishlistId)
+        {
+            return await _context.WishlistAlbum.Where(c => c.WishlistId == wishlistId).ToListAsync();
         }
     }
 }

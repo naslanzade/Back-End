@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OneSoundApp.Data;
 
@@ -11,9 +12,10 @@ using OneSoundApp.Data;
 namespace OneSoundApp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230802060309_CreateCartAndCartAlbumTables")]
+    partial class CreateCartAndCartAlbumTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -829,60 +831,6 @@ namespace OneSoundApp.Migrations
                     b.ToTable("Songs");
                 });
 
-            modelBuilder.Entity("OneSoundApp.Models.Wishlist", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("AppUserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("SoftDelete")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
-
-                    b.ToTable("Wishlist");
-                });
-
-            modelBuilder.Entity("OneSoundApp.Models.WishlistAlbum", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("AlbumId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("SoftDelete")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("WishlistId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AlbumId");
-
-                    b.HasIndex("WishlistId");
-
-                    b.ToTable("WishlistAlbum");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -1098,36 +1046,6 @@ namespace OneSoundApp.Migrations
                     b.Navigation("Singer");
                 });
 
-            modelBuilder.Entity("OneSoundApp.Models.Wishlist", b =>
-                {
-                    b.HasOne("OneSoundApp.Models.AppUser", "AppUser")
-                        .WithMany()
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("AppUser");
-                });
-
-            modelBuilder.Entity("OneSoundApp.Models.WishlistAlbum", b =>
-                {
-                    b.HasOne("OneSoundApp.Models.Album", "Album")
-                        .WithMany("WishlistAlbums")
-                        .HasForeignKey("AlbumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("OneSoundApp.Models.Wishlist", "Wishlist")
-                        .WithMany("WishlistAlbums")
-                        .HasForeignKey("WishlistId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Album");
-
-                    b.Navigation("Wishlist");
-                });
-
             modelBuilder.Entity("OneSoundApp.Models.Album", b =>
                 {
                     b.Navigation("CartAlbums");
@@ -1135,8 +1053,6 @@ namespace OneSoundApp.Migrations
                     b.Navigation("Images");
 
                     b.Navigation("Song");
-
-                    b.Navigation("WishlistAlbums");
                 });
 
             modelBuilder.Entity("OneSoundApp.Models.Author", b =>
@@ -1181,11 +1097,6 @@ namespace OneSoundApp.Migrations
                     b.Navigation("Album");
 
                     b.Navigation("Song");
-                });
-
-            modelBuilder.Entity("OneSoundApp.Models.Wishlist", b =>
-                {
-                    b.Navigation("WishlistAlbums");
                 });
 #pragma warning restore 612, 618
         }

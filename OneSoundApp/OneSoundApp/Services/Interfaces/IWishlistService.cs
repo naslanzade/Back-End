@@ -10,5 +10,7 @@ namespace OneSoundApp.Services.Interfaces
         void AddAlbum(List<WishlistVM> wishlist, Album product);
         Task<WishlistDeleteResponse> DeleteAlbum(int? id);
         int GetAlbumsCount();
+        Task<Wishlist> GetByUserIdAsync(string userId);
+        Task<List<WishlistAlbum>> GetAllByWishlistIdAsync(int? wishlistId);
     }
 }

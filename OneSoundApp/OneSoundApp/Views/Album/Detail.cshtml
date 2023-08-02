@@ -64,22 +64,53 @@
                                 <a href="https://web.telegram.org/a/"><i class="fa-brands fa-telegram"></i></a>
                             </div>
                             <div class="icons wow fadeInUp" data-wow-delay="100ms">
-                                <div class="left-icon">
-                                    <form id="basket-form" data-id="@Model.Id">
-                                        <button type="submit">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                        </button>
-                                        <span>cart</span>
-                                    </form>
-                                </div>
-                                <div class="right-icon">
-                                    <form id="wishlist-form" data-id="@Model.Id">
-                                        <button type="submit">
-                                            <i class="fa-regular fa-heart"></i>
-                                            <span>wishlist</span>
-                                        </button>
-                                    </form>
-                                </div>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <div class="left-icon">
+                                        <form id="basket-form" data-id="@Model.Id">
+                                            <button type="submit">
+                                                <i class="fa-solid fa-basket-shopping"></i>
+                                            </button>
+                                            <span>cart</span>
+                                        </form>
+                                    </div>
+                                }
+
+                                else
+                                {
+                                    <div class="left-icon">
+                                        <form id="basket-form" data-id="@Model.Id">
+                                            <button type="submit" onclick="location.href='@Url.Action("SignIn", "Account")'">
+                                                <i class="fa-solid fa-basket-shopping"></i>
+                                            </button>
+                                            <span>cart</span>
+                                        </form>
+                                    </div>
+                                }
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <div class="right-icon">
+                                        <form id="wishlist-form" data-id="@Model.Id">
+                                            <button type="submit">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="right-icon">
+                                        <form id="wishlist-form" data-id="@Model.Id">
+                                            <button type="submit" onclick="location.href='@Url.Action("SignIn", "Account")'">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>wishlist</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                }
+
                             </div>
                         </div>
 
