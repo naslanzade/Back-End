@@ -53,6 +53,7 @@ builder.Services.AddScoped<IPodcastService, PodcastService>();
 builder.Services.AddScoped<IWishlistService, WishlistService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<ISubscribeService, SubscribeService>();
 
 
 var app = builder.Build();

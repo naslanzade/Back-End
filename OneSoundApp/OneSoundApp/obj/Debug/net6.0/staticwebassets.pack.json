@@ -1277,6 +1277,10 @@
       "PackagePath": "staticwebassets\\assets\\scss\\events\\events.scss"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\helpers\\_preloader.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\helpers\\_preloader.scss"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\helpers\\_responsive.scss",
       "PackagePath": "staticwebassets\\assets\\scss\\helpers\\_responsive.scss"
     },
@@ -1327,6 +1331,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\news\\news.scss",
       "PackagePath": "staticwebassets\\assets\\scss\\news\\news.scss"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\partials\\_resposive.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\partials\\_resposive.scss"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\password\\forgotPass.css",

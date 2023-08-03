@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MsII9apZF/tSfBk/QYhnubvP87UVjITrxU2zctJEWO0=",
+  "Hash": "uln7cjujahZ3nIZIT5EJQL4j25fA4MLFeWug2AAFl+E=",
   "Source": "OneSoundApp",
   "BasePath": "_content/OneSoundApp",
   "Mode": "Default",
@@ -5457,6 +5457,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\scss\\events\\events.scss"
     },
     {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\helpers\\_preloader.scss",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/scss/helpers/_preloader.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\scss\\helpers\\_preloader.scss"
+    },
+    {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\helpers\\_responsive.scss",
       "SourceId": "OneSoundApp",
       "SourceType": "Discovered",
@@ -5676,6 +5693,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\scss\\news\\news.scss"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\partials\\_resposive.scss",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/scss/partials/_resposive.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\scss\\partials\\_resposive.scss"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\scss\\password\\forgotPass.css",

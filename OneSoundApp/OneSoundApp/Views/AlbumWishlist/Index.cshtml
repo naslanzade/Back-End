@@ -63,12 +63,20 @@
                     }
                     else
                     {
-                        <div class="alert alert-success-wishlist" role="alert" style="background-color: #f5f9fa;color: black;border-color: #f5f9fa;">
-                            No albums added to wishlist...
+                        <div class="col-12">
+                            <div class="deactive-shop">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>No products added to wishlist</span>
+                                <button><a asp-controller="Shop" asp-action="Index">Go Shop</a></button>
+                            </div>
                         </div>
                     }
-                    <div class="alert alert-success-wishlist d-none" role="alert" style="background-color: #f5f9fa;color: black;border-color: #f5f9fa;">
-                        No albums added to wishlist...
+                    <div class="col-12">
+                        <div class="deactive-shop d-none">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>No products added to wishlist</span>
+                            <button><a asp-controller="Shop" asp-action="Index">Go Shop</a></button>
+                        </div>
                     </div>
 
                 </div>            

@@ -47,9 +47,10 @@
             <div class="data  wow fadeInUp" data-wow-delay="100ms">
                 <p>See what’s new</p>
                 <h2>Get in touch</h2>
-                <form action="">
-                    <input type="email" placeholder="E-mail">
-                    <button><a href="">Send<i class="fa-solid fa-angles-right"></i></a></button>
+                <form method="post" asp-controller="Event" asp-action="PostSubscribe">
+                    <input asp-for="Email" placeholder="E-mail">
+                    <span class="text-danger" asp-validation-for="Email">@ViewBag.error</span>
+                    <button type="submit"><a>Send<i class="fa-solid fa-angles-right"></i></a></button>
                 </form>
             </div>
         </div>

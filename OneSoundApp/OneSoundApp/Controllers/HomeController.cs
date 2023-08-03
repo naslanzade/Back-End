@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using OneSoundApp.Data;
 using OneSoundApp.Models;
 using OneSoundApp.Services.Interfaces;
 using OneSoundApp.ViewModels.Home;
-
+using OneSoundApp.ViewModels.Subscribe;
 
 namespace OneSoundApp.Controllers
 {
@@ -13,19 +15,22 @@ namespace OneSoundApp.Controllers
         private readonly ISongService _songService;
         private readonly IEventService _eventService;
         private readonly ISingerService _singerService;
+        private readonly AppDbContext _context;
 
 
         public HomeController(ISliderService sliderService,
                               IAlbumService albumService,
                               ISongService songService,
                               IEventService eventService,
-                              ISingerService singerService)
+                              ISingerService singerService,
+                              AppDbContext context)
         {
             _sliderService = sliderService;
             _albumService = albumService;
             _songService = songService;
             _eventService = eventService;
             _singerService = singerService;
+            _context = context;
 
         }
 
@@ -58,6 +63,36 @@ namespace OneSoundApp.Controllers
             return View(model);
         }
 
-    
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> PostSubscribe(SubscribeVM model)
+        {
+            try
+            {
+                if (!ModelState.IsValid) return RedirectToAction("Index", model);
+                var existSubscribe = await _context.Subscribes.FirstOrDefaultAsync(m => m.Email == model.Email);
+                if (existSubscribe != null)
+                {
+                    ModelState.AddModelError("Email", "Email already exist");
+                    return RedirectToAction("Index");
+                }
+                Subscribe subscribe = new()
+                {
+                    Email = model.Email,
+                };
+                await _context.Subscribes.AddAsync(subscribe);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.error = ex.Message;
+                return View();
+            }
+
+        }
+
+
     }
 }

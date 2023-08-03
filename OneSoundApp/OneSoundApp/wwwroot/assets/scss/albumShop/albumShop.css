@@ -999,6 +999,7 @@ main #shop .all .col9 a .each-cards .right .icons .left-icon {
 main #shop .all .col9 a .each-cards .right .icons .left-icon button {
   border: none;
   background-color: transparent;
+  text-decoration: none;
 }
 main #shop .all .col9 a .each-cards .right .icons .left-icon button i {
   transition: all 0.5s;

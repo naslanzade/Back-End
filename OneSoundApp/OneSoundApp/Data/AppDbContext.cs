@@ -32,6 +32,8 @@ namespace OneSoundApp.Data
         public DbSet<Wishlist> Wishlist { get; set; }
         public DbSet<WishlistAlbum> WishlistAlbum { get; set; }
 
+        public DbSet<Subscribe> Subscribes { get; set; }
+
 
 
 

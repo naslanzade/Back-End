@@ -11,6 +11,7 @@ namespace OneSoundApp.ViewModels.Home
         public IEnumerable<Song> TopSongs { get; set; }
         public IEnumerable<Event> Events { get; set; }
         public IEnumerable<Singer> Singers { get; set; }
+        public string Email { get; set; }
 
 
     }

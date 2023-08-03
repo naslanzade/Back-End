@@ -391,8 +391,9 @@ footer {
             text-align: center;
             margin-top: 20px;
 
-            a{
+            a {
                 text-decoration: none;
+
                 i {
                     width: 25px;
                     height: 25px;
@@ -481,14 +482,14 @@ main {
             padding-bottom: 20px;
 
             .table-products {
-                margin-top: 53px;               
+                margin-top: 53px;
                 padding-top: 6px;
-        
+
                 .table {
                     th {
                         height: 48px;
                         text-align: center;
-                        color:black;
+                        color: black;
                         font-size: 18px;
                         border-bottom-width: 1px;
                         border-bottom-style: solid;
@@ -497,39 +498,42 @@ main {
                         font-weight: 400;
                     }
                 }
-        
+
             }
-            th{
+
+            th {
                 padding: 16px;
             }
-        
+
             tbody {
-        
+
                 td {
                     padding: 8px;
                     text-align: center;
                     width: 203px;
                     height: 103px;
-                    color:black;
+                    color: black;
                     font-size: 18px;
                     text-decoration: none;
                     font-weight: 400;
-                    font-family: mySecondFont;        
-        
+                    font-family: mySecondFont;
+
                     &:nth-child(2) {
                         padding-top: 55px;
-                    }        
+                    }
+
                     &:nth-child(3) {
                         padding-top: 55px;
                         font-size: 18px;
                         font-weight: 400;
-        
+
                     }
+
                     &:nth-child(4) {
                         padding-top: 55px;
-        
+
                         button {
-        
+
                             padding: 0;
                             min-width: 0;
                             width: 20px;
@@ -540,24 +544,26 @@ main {
                             border: none;
                             background-color: white;
                             cursor: pointer;
-        
+
                             i {
                                 color: black;
                                 font-size: 15px;
                             }
                         }
                     }
+
                     &:nth-child(5) {
                         padding-top: 55px;
                         font-size: 18px;
                         font-weight: 400;
-        
-                    }        
+
+                    }
+
                     &:nth-child(6) {
                         padding-top: 55px;
-        
+
                         button {
-        
+
                             padding: 0;
                             min-width: 0;
                             width: 40px;
@@ -568,14 +574,14 @@ main {
                             border: none;
                             background-color: white;
                             cursor: pointer;
-        
+
                             i {
-                                color:black;
+                                color: black;
                             }
                         }
                     }
-        
-        
+
+
                     img {
                         width: 135px;
                         height: 133px;
@@ -590,41 +596,41 @@ main {
                         color: black;
                         font-size: 15px;
                     }
-        
+
                 }
-        
-             
-        
+
+
+
             }
 
             .total {
 
-                span{
-                    padding: 38px;                   
+                span {
+                    padding: 38px;
                     color: black;
                     font-size: 20px;
                     text-decoration: none;
                     font-weight: 400;
                     font-family: mySecondFont;
-                    font-style: italic;                 
+                    font-style: italic;
 
                 }
-               
+
             }
 
 
             .button-part {
                 margin-top: 30px;
                 text-align: center;
-    
+
                 button {
-    
+
                     border: 1.5px black solid;
                     background-color: white;
                     width: 200px;
                     height: 50px;
                     transition: all 0.5s;
-    
+
                     a {
                         text-decoration: none !important;
                         padding: 10px;
@@ -632,19 +638,19 @@ main {
                         cursor: pointer;
                         font-family: mySecondFont;
                         transition: all 0.5s;
-    
-    
+
+
                         i {
                             padding-left: 5px;
-    
+
                         }
                     }
                 }
-    
+
                 button:hover {
                     border: 1.5px white solid;
                     background-color: black;
-    
+
                     a {
                         color: white;
                     }
@@ -652,10 +658,45 @@ main {
             }
         }
 
+        .deactive-shop {
+            padding-top: 80px;
+            padding-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 150px;
+                color: #666666;
+            }
+
+            span {
+                font-weight: 200;
+                color: #616161;
+                padding-top: 25px;
+                padding-bottom: 35px;
+            }
+
+            button {
+                transition: all 0.5s;
+                background-color: black;
+                border: none;
+                padding: 10px 60px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+
+        }
+
     }
 
     #scrollBtn {
-        
+
 
         .btn {
             opacity: 0;
@@ -699,4 +740,3 @@ main {
         display: block !important;
     }
 }
-

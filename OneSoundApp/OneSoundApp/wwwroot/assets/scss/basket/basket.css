@@ -990,6 +990,35 @@ main #basket .table-area .button-part button:hover {
 main #basket .table-area .button-part button:hover a {
   color: white;
 }
+main #basket .deactive-shop {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main #basket .deactive-shop i {
+  font-size: 150px;
+  color: #666666;
+}
+main #basket .deactive-shop span {
+  font-weight: 200;
+  color: #616161;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+main #basket .deactive-shop button {
+  transition: all 0.5s;
+  background-color: black;
+  border: none;
+  padding: 10px 60px;
+}
+main #basket .deactive-shop button a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
 main #scrollBtn .btn {
   opacity: 0;
 }

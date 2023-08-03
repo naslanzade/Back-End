@@ -564,7 +564,7 @@ main {
 
 
 
-                           
+
 
 
                             }
@@ -593,16 +593,13 @@ main {
                 width: 75%;
 
                 a {
-
                     text-decoration: none;
-
                     .each-cards {
                         padding-top: 20px;
                         padding-bottom: 20px;
                         border-top: 1px solid #ebebeb;
                         display: flex;
                         justify-content: space-between;
-
 
                         .left {
                             position: relative;
@@ -687,11 +684,14 @@ main {
                                     button {
                                         border: none;
                                         background-color: transparent;
+                                        text-decoration: none;
 
                                         i {
                                             transition: all 0.5s;
                                             color: black !important;
                                         }
+
+
                                     }
 
 
@@ -719,15 +719,27 @@ main {
 
                                     padding-right: 50px;
 
+
+
+
                                     button {
                                         border: none;
                                         background-color: transparent;
+                                       
 
                                         i {
                                             transition: all 0.5s;
                                             color: black !important;
                                         }
+
+
+
+
+
+
                                     }
+
+
 
 
                                     span {
@@ -839,7 +851,7 @@ main {
 
                             span {
 
-                                a{
+                                a {
 
                                     text-decoration: none;
                                     font-size: 15px;
@@ -851,15 +863,15 @@ main {
                                 }
 
 
-                                a:hover{
+                                a:hover {
                                     color: blue;
                                     transform: scale(1.2);
 
                                 }
-                               
+
                             }
 
-                        
+
 
 
 
