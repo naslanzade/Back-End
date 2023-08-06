@@ -1,0 +1,16 @@
+﻿@model AuthorEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container my-5">
+    <form method="post" asp-action="Edit">
+        <label for="formFile" class="form-label my-2">Update Author Name</label>
+        <input asp-for="Name" class="form-control mt-3" maxlength="" />
+        <span class="text-danger d-block" asp-validation-for="Name"></span>
+        <button type="submit" class="btn btn-inverse-primary btn-fw mt-3">Submit</button>
+        <a asp-action="Index" class="btn btn-outline-info btn-fw mt-3">Back</a>
+    </form>
+</div>
+
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tKSmv1mypcep3df37YD/orAWBjjBzaY5uKEeWAM79Wo=",
+  "Hash": "NGhDtv6duKrTQDKpLfy4dp+5JQuzPnTNHeCkIGsy4HU=",
   "Source": "OneSoundApp",
   "BasePath": "_content/OneSoundApp",
   "Mode": "Default",
@@ -30685,6 +30685,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\ArchivoNarrow-VariableFont_wght.ttf"
     },
     {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\724950a9-2ff3-48e3-ac8a-144c02aef0ae_akon.jpeg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/724950a9-2ff3-48e3-ac8a-144c02aef0ae_akon.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\724950a9-2ff3-48e3-ac8a-144c02aef0ae_akon.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\add.gif",
       "SourceId": "OneSoundApp",
       "SourceType": "Discovered",
@@ -30717,23 +30734,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\add2.gif"
-    },
-    {
-      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\akon.jpeg",
-      "SourceId": "OneSoundApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
-      "BasePath": "_content/OneSoundApp",
-      "RelativePath": "assets/images/akon.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\akon.jpeg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\akon1.jpeg",
@@ -30785,23 +30785,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\album1.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\avatar the weeknd.jpg",
-      "SourceId": "OneSoundApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
-      "BasePath": "_content/OneSoundApp",
-      "RelativePath": "assets/images/avatar the weeknd.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\avatar the weeknd.jpg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\basta.jpg",
@@ -31108,6 +31091,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\e8.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\ee2533f8-7c03-4650-8f6e-3c80199de721_beyonce.jpg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/ee2533f8-7c03-4650-8f6e-3c80199de721_beyonce.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\ee2533f8-7c03-4650-8f6e-3c80199de721_beyonce.jpg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\electric zoo.jpg",

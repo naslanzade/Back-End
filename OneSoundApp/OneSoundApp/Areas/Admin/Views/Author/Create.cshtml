@@ -1,0 +1,16 @@
+﻿@model AuthorCreateVM
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container my-5">
+    <form method="post" asp-action="Create">
+        <label for="formFile" class="form-label my-2">Add Author Name</label>
+        <input class="form-control" asp-for="Name" id="category-name"/>
+        <span class="text-danger d-block" asp-validation-for="Name"></span>
+        <button type="submit" class="btn btn-inverse-primary btn-fw mt-3">Submit</button>
+        <a asp-action="Index" class="btn btn-outline-info btn-fw mt-3">Back</a>
+    </form>
+
+</div>
+

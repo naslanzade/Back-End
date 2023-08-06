@@ -8009,6 +8009,10 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\ArchivoNarrow-VariableFont_wght.ttf"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\724950a9-2ff3-48e3-ac8a-144c02aef0ae_akon.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\724950a9-2ff3-48e3-ac8a-144c02aef0ae_akon.jpeg"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\Tomorrowland (1).jpg",
       "PackagePath": "staticwebassets\\assets\\images\\Tomorrowland (1).jpg"
     },
@@ -8025,10 +8029,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\add2.gif"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\akon.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\akon.jpeg"
-    },
-    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\akon1.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\akon1.jpeg"
     },
@@ -8039,10 +8039,6 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\album1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\album1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\avatar the weeknd.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\avatar the weeknd.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\basta.jpg",
@@ -8115,6 +8111,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e8.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\e8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\ee2533f8-7c03-4650-8f6e-3c80199de721_beyonce.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\ee2533f8-7c03-4650-8f6e-3c80199de721_beyonce.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\electric zoo.jpg",

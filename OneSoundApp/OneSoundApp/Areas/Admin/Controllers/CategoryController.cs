@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OneSoundApp.Areas.Admin.ViewModels.Category;
-using OneSoundApp.Areas.Admin.ViewModels.Slider;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;
 using OneSoundApp.Models;
-using OneSoundApp.Services;
 using OneSoundApp.Services.Interfaces;
 
 namespace OneSoundApp.Areas.Admin.Controllers

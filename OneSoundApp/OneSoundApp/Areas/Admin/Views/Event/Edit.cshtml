@@ -1,0 +1,30 @@
+﻿@model EventEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container my-5">
+    <div class="slider-image">
+        <img src="~/assets/images/@Model.Image" style="width:500px; height:300px" />
+    </div>
+    <form method="post" asp-action="Edit" enctype="multipart/form-data">
+        <input asp-for="NewImage" class="form-control mt-3" style="width:500px;" />
+        <span asp-validation-for="NewImage" class="text-danger d-block"></span>
+
+        <div class="form-group mt-3">
+            <label for="formFile" class="form-label my-2">Update Event Name</label>
+            <input class="form-control" id="customFile" asp-for="EventName" />
+            <span class="text-danger" asp-validation-for="EventName">@ViewBag.error</span>
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="formFile" class="form-label my-2">Update Event Location</label>
+            <input class="form-control" id="customFile" asp-for="Location" />
+            <span class="text-danger" asp-validation-for="Location">@ViewBag.error</span>
+        </div>
+
+        <button type="submit" class="btn btn-inverse-primary btn-fw mt-3">Submit</button>
+        <a asp-action="Index" class="btn btn-outline-info btn-fw mt-3">Back</a>
+    </form>
+</div>
+
