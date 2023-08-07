@@ -16,6 +16,11 @@ namespace OneSoundApp.Services
             _context = context;
         }
 
+        public async Task<List<Podcast>> GetAll()
+        {
+            return await _context.Podcast.ToListAsync();
+        }
+
         public async Task<int> GetCountAsync()
         {
             return await _context.Podcast.CountAsync();

@@ -42,14 +42,12 @@ namespace OneSoundApp.Controllers
             return View(model);
         }
 
-
-
         public async Task<IActionResult> Detail(int? id) 
         {
 
             if (id is null) return BadRequest();
 
-            Song song= await _songService.GetPodcastDetailAsync(id);
+            Song song= await _songService.GetSongDetailAsync(id);
 
             if (song == null) return NotFound();
 

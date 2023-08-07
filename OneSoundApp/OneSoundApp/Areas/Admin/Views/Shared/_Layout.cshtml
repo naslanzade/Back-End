@@ -320,25 +320,36 @@
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                             <i class="menu-icon mdi mdi-chart-line"></i>
-                            <span class="menu-title">News</span>
+                            <span class="menu-title">Singers</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="auth">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"> <a class="nav-link" asp-controller="News" asp-action="Index"> News </a></li>
-                                <li class="nav-item"> <a class="nav-link" asp-controller="NewsImage" asp-action="Index"> News Image </a></li>
+                                <li class="nav-item"> <a class="nav-link" asp-controller="Singer" asp-action="Index"> Singer </a></li>                               
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
                             <i class="menu-icon mdi mdi-card-text-outline"></i>
-                            <span class="menu-title">News Authors</span>
+                            <span class="menu-title">Songs</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
-                                <li class="nav-item"><a class="nav-link" asp-controller="NewsAuthor" asp-action="Index">News Author</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="Song" asp-action="Index">Song</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                            <i class="menu-icon mdi mdi-card-text-outline"></i>
+                            <span class="menu-title">Records</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="form-elements">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="Record" asp-action="Index">Record</a></li>
                             </ul>
                         </div>
                     </li>

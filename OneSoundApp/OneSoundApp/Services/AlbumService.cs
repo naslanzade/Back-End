@@ -63,5 +63,10 @@ namespace OneSoundApp.Services
         {
             return await _context.Albums.Include(m => m.Images).FirstOrDefaultAsync(m => m.Id == id);
         }
+
+        public async Task<List<Album>> GetAll()
+        {
+            return await _context.Albums.ToListAsync();
+        }
     }
 }

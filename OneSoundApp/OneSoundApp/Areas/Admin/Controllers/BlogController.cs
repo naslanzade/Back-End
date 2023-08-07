@@ -1,13 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using OneSoundApp.Areas.Admin.ViewModels.Blog;
-using OneSoundApp.Areas.Admin.ViewModels.Category;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;
 using OneSoundApp.Models;
 using OneSoundApp.Services.Interfaces;
-using System.Data;
+
 
 namespace OneSoundApp.Areas.Admin.Controllers
 {
@@ -186,7 +184,7 @@ namespace OneSoundApp.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]       
         public async Task<IActionResult> Delete(int id)
         {
-            var team = await _blogService.GetByIdAsnyc(id);
+            var blog = await _blogService.GetByIdAsnyc(id);
 
             await _blogService.DeleteAsync(id);
 
