@@ -85,7 +85,7 @@
                                                         else
                                                         {
                                                             <div class="left-icon">
-                                                                <form id="wishlist-form" data-id="@album.Id">
+                                                                <form id="wishlist-form">
                                                                     <button type="submit" onclick="location.href='@Url.Action("SignIn", "Account")'">
                                                                         <i class="fa-regular fa-heart"></i>
                                                                         <span>wishlist</span>
@@ -96,8 +96,8 @@
 
                                                         @if (User.Identity.IsAuthenticated)
                                                         {
-                                                          <div class="right-icon">                                                          
-                                                            <form id="basket-form" data-id="@album.Id">
+                                                          <div class="right-icon">
+                                                                <form id="basket-form" data-id="@album.Id">
                                                                 <button type="submit">
                                                                     <i class="fa-solid fa-basket-shopping"></i>
                                                                 </button>

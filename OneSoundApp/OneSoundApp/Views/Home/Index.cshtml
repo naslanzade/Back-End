@@ -66,7 +66,7 @@
                                         }
                                         else
                                         {
-                                            <form id="wishlist-form" data-id="@album.Id">
+                                            <form id="wishlist-form" >
                                                 <button type="submit" class="wish" onclick="location.href='@Url.Action("SignIn", "Account")'">
                                                     <i class="fa-solid fa-heart heart"></i>
                                                 </button>
@@ -83,7 +83,7 @@
                                         }
                                         else
                                         {
-                                            <form id="basket-form" data-id="@album.Id">
+                                            <form id="basket-form">
                                                 <button type="submit" class="cart" onclick="location.href='@Url.Action("SignIn", "Account")'">
                                                     <i class="fa-solid fa-basket-shopping basket"></i>
                                                 </button>

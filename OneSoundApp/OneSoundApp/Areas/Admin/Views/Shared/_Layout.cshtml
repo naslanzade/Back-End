@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="~/admin/css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="~/admin/images/favicon.png" />
+    @await RenderSectionAsync("Css", required: false)
 </head>
 <body>
     <div class="container-scroller">
@@ -344,16 +345,28 @@
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
                             <i class="menu-icon mdi mdi-card-text-outline"></i>
-                            <span class="menu-title">Records</span>
+                            <span class="menu-title">Podcasts</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div class="collapse" id="form-elements">
                             <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="Podcast" asp-action="Index">Podcast</a></li>
                                 <li class="nav-item"><a class="nav-link" asp-controller="Record" asp-action="Index">Record</a></li>
                             </ul>
                         </div>
                     </li>
-                  
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+                            <i class="menu-icon mdi mdi-card-text-outline"></i>
+                            <span class="menu-title">Playlist Songs</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="form-elements">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="PlaylistSong" asp-action="Index">Playlist Song</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <!-- partial -->
@@ -378,6 +391,7 @@
             <!-- Custom js for this page-->
             <script src="~/admin/js/dashboard.js"></script>
             <script src="~/admin/js/Chart.roundedBarCharts.js"></script>
+            @await RenderSectionAsync("Scripts", required: false)
             <!-- End custom js for this page-->
 </body>
 

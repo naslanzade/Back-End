@@ -56,6 +56,7 @@ builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<ISubscribeService, SubscribeService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IRecordService, RecordService>();
+builder.Services.AddScoped<IPlaylistSongService, PlaylistSongService>();
 
 
 var app = builder.Build();

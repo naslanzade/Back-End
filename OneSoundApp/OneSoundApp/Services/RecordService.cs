@@ -62,7 +62,7 @@ namespace OneSoundApp.Services
         public async Task<Record> GetByIdAsync(int? id)
         {
             return await _context.Record.Include(m => m.Podcast).
-                                          FirstOrDefaultAsync(m=>m.Id==id);
+                                         FirstOrDefaultAsync(m=>m.Id==id);
         }
 
         public async Task<int> GetCountAsync()

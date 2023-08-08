@@ -5,7 +5,6 @@ using OneSoundApp.Areas.Admin.ViewModels.Record;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;
 using OneSoundApp.Models;
-using OneSoundApp.Services;
 using OneSoundApp.Services.Interfaces;
 
 namespace OneSoundApp.Areas.Admin.Controllers
@@ -171,9 +170,9 @@ namespace OneSoundApp.Areas.Admin.Controllers
 
         private async Task<int> GetPageCountAsync(int take)
         {
-            var albumCount = await _recordService.GetCountAsync();
+            var recordCount = await _recordService.GetCountAsync();
 
-            return (int)Math.Ceiling((decimal)albumCount / take);
+            return (int)Math.Ceiling((decimal)recordCount / take);
         }
     }
 }

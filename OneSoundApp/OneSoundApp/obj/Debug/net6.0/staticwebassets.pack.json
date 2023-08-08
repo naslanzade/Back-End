@@ -1069,6 +1069,10 @@
       "PackagePath": "staticwebassets\\Admin\\js\\paginate.js"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\podcast.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\podcast.js"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\popover.js",
       "PackagePath": "staticwebassets\\Admin\\js\\popover.js"
     },
@@ -8075,6 +8079,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\breadcumb3.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\breadcumb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\d862f32b-d2c8-4885-aa40-3eb5cf714a8f_akon.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\d862f32b-d2c8-4885-aa40-3eb5cf714a8f_akon.jpeg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\dictators.jpeg",

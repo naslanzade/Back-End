@@ -79,7 +79,7 @@
                                 else
                                 {
                                     <div class="left-icon">
-                                        <form id="basket-form" data-id="@Model.Id">
+                                        <form id="basket-form">
                                             <button type="submit" onclick="location.href='@Url.Action("SignIn", "Account")'">
                                                 <i class="fa-solid fa-basket-shopping"></i>
                                             </button>
@@ -102,7 +102,7 @@
                                 else
                                 {
                                     <div class="right-icon">
-                                        <form id="wishlist-form" data-id="@Model.Id">
+                                        <form id="wishlist-form" >
                                             <button type="submit" onclick="location.href='@Url.Action("SignIn", "Account")'">
                                                 <i class="fa-regular fa-heart"></i>
                                                 <span>wishlist</span>

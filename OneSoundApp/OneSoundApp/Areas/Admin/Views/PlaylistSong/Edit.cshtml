@@ -1,0 +1,21 @@
+﻿@model PlaylistSongEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container my-5">
+    <form method="post" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group mt-3">
+            <p><b>Song Name</b></p>
+            <input asp-for="Name" class="form-control" placeholder="Title" />
+            <span asp-validation-for="Name" class="text-danger d-block"></span>
+        </div>
+        <p><b>Select Playlist</b></p>
+        <div class="form-group mt-3">
+            <select asp-for="PlaylistId" class="form-control" asp-items="ViewBag.playlists"></select>
+        </div>
+        <button type="submit" class="btn btn-success btn-rounded btn-fw mt-3">Submit</button>
+        <a asp-action="Index" class="btn btn-primary btn-rounded btn-fw mt-3">Back</a>
+    </form>
+</div>
+

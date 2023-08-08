@@ -231,9 +231,9 @@ namespace OneSoundApp.Areas.Admin.Controllers
 
         private async Task<int> GetPageCountAsync(int take)
         {
-            var albumCount = await _blogService.GetCountAsync();
+            var blogCount = await _blogService.GetCountAsync();
 
-            return (int)Math.Ceiling((decimal)albumCount / take);
+            return (int)Math.Ceiling((decimal)blogCount / take);
         }
     }
 }
