@@ -15,5 +15,6 @@ namespace OneSoundApp.Services.Interfaces
         Task<Podcast> GetByIdAsnyc(int? id);
         Task<Podcast> GetWithIncludesAsync(int? id);
         Task DeleteImageByIdAsync(int id);
+      
     }
 }
