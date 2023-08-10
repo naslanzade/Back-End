@@ -1,4 +1,4 @@
-﻿using OneSoundApp.Areas.Admin.ViewModels.PlaylistSong;
+﻿using OneSoundApp.Areas.Admin.ViewModels.PlaylistSongs;
 using OneSoundApp.Models;
 
 namespace OneSoundApp.Services.Interfaces

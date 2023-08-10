@@ -5,46 +5,49 @@
 
 
 <style>
-    .images {
-        position: relative;
-       
+    .active-status {
+        width: 16px;
+        height: 16px;
+        background-color: greenyellow;
+        border-radius: 50%;
+        cursor: pointer;
     }
 
-        .images:hover img {
-            filter: brightness(50%);
-        }
 
-        .images img {
-            transition: all 0.5s;
-        }
 
-        .images:hover button {
-            display: block;
-            opacity: 1;
-            transition: all 0.5s;
-        }
+    .de-active {
+        width: 16px;
+        height: 16px;
+        background-color: #ff0000cf;
+        border-radius: 50%;
+        cursor: pointer;
+    }
 
-        .images button {
-            position: absolute;
-            left: 75px;
-            top: 150px;
-            opacity: 0;
-        }
+    .authentication-wrapper.authentication-basic .authentication-inner:after {
+        content: none;
+    }
 
 </style>
 
 <div class="container my-5">
-    <div class="d-flex">
+    <div class="images d-flex" style="text-align:center">
         @foreach (var item in Model.Images)
         {
-            <div class="images mr-2">
-                <img src="~/assets/images/@item.Image" class="product-image" style="width:200px; height:300px; padding-left:10px;" />
-                @if (!item.IsMain)
-                {
-                    <button data-id="@item.Id" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-
-                }
-
+            <div style="width:200px; margin-right:10px;" data-id="@item.Id">
+                <img style="width:200px;height:200px" class="img-fluid" src="~/assets/images/@item.Image" />
+                <div class=" d-flex align-items-center justify-content-center" style="margin-top: 13px;" data-id="@item.Id">
+                    <a class="delete-image"><i class="fa-solid fa-trash-can" style="color:black;cursor:pointer;"></i></a>
+                    <div class="statuses" style=" margin-left:10px;">
+                        @if (item.IsMain)
+                        {
+                            <div class="active-status image-status"></div>
+                        }
+                        else
+                        {
+                            <div class="de-active image-status"></div>
+                        }
+                    </div>
+                </div>
             </div>
         }
     </div>
@@ -57,8 +60,13 @@
             <textarea asp-for="Description" class="form-control" placeholder="Description"></textarea>
             <span asp-validation-for="Description" class="text-danger d-block"></span>
         </div>    
+        <p><b>Select Author</b></p>
         <div class="form-group mt-3">
             <select asp-for="AuthorId" class="form-control" asp-items="ViewBag.authors"></select>
+        </div>
+        <p><b>Select Category</b></p>
+        <div class="form-group mt-3">
+            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.categories"></select>
         </div>
         <div class="form-group mt-3">
             <lable>Add new Images</lable>
@@ -71,6 +79,6 @@
 
 @section Scripts{
     <partial name="_ValidationScriptsPartial" />
-    <script src="~/Admin/js/podcast.js"></script>
+    <script src="~/Admin/js/main/podcast.js"></script>
 }
 

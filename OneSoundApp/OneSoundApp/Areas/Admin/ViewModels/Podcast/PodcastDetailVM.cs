@@ -9,5 +9,6 @@ namespace OneSoundApp.Areas.Admin.ViewModels.Podcast
         public string Description { get; set; }
         public ICollection<PodcastImage> Images { get; set; }
         public string AuthorName { get; set; }
+        public ICollection<Record> Records { get; set; }
     }
 }

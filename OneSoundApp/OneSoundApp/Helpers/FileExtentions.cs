@@ -24,10 +24,24 @@ namespace OneSoundApp.Helpers
             using (FileStream stream = new(path, FileMode.Create))
             {
                 await file.CopyToAsync(stream);
+            }          
+
+        }
+
+
+        public static void DeleteFile(string path)
+        {
+
+            if (System.IO.File.Exists(path))
+            {
+                System.IO.File.Delete(path);
             }
 
-           
+        }
 
+        public static string GetFilePath(string root, string folder, string file)
+        {
+            return Path.Combine(root, folder, file);
         }
 
 

@@ -1,0 +1,91 @@
+﻿@model PlaylistDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+
+<style>
+    .songname {
+        font-size: 12px;
+        line-height: 0%;        
+        transition: all 0.5s;
+        height: 30px;
+        width: 200px;
+        padding: 7px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        color: white;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25); 
+
+    }
+
+    .spotify {
+        padding-right: 15px;
+        color: #1DB954;
+    }
+
+</style>
+
+
+<div class="col-lg-10 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive pt-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                Image
+                            </th>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                Songs
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                @foreach (var item in Model.Images)
+                                {
+                                    <img src="~/assets/images/@item.Image" alt="image" style="width:100px;height:100px; border-radius:0%" />
+                                }
+
+                            </td>
+                            <td>
+                                @Model.Name
+                            </td>
+                            <td>
+                                <input class="form-control" id="customFile" asp-for="Description" style="height:100px;" />
+                            </td>
+                            <td>
+                                @foreach (var item in Model.Songs)
+                                {
+                                    <p class="songname"><i class="fa-brands fa-spotify spotify"></i>@item.Name</p>
+                                }
+                            </td>
+
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <br></br>
+            <a asp-action="Index" class="btn btn-outline-info btn-fw">Back</a>
+        </div>
+    </div>
+
+</div>
+
+

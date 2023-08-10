@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OneSoundApp.Areas.Admin.ViewModels.Record;
+using OneSoundApp.Areas.Admin.ViewModels.Records;
 using OneSoundApp.Data;
 using OneSoundApp.Models;
 using OneSoundApp.Services.Interfaces;

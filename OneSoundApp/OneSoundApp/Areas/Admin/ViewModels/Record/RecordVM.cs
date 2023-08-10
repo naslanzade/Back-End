@@ -1,4 +1,4 @@
-﻿namespace OneSoundApp.Areas.Admin.ViewModels.Record
+﻿namespace OneSoundApp.Areas.Admin.ViewModels.Records
 {
     public class RecordVM
     {

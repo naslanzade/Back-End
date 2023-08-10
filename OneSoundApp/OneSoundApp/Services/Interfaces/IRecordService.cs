@@ -1,5 +1,5 @@
 ﻿
-using OneSoundApp.Areas.Admin.ViewModels.Record;
+using OneSoundApp.Areas.Admin.ViewModels.Records;
 using OneSoundApp.Models;
 
 namespace OneSoundApp.Services.Interfaces

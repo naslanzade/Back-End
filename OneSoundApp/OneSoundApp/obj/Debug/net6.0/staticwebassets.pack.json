@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\OneSoundApp.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\css\\main.css",
-      "PackagePath": "staticwebassets\\Admin\\css\\main.css"
-    },
-    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\css\\maps\\horizontal-layout-dark\\style.css.map",
       "PackagePath": "staticwebassets\\Admin\\css\\maps\\horizontal-layout-dark\\style.css.map"
     },
@@ -1025,6 +1021,14 @@
       "PackagePath": "staticwebassets\\Admin\\js\\main.js"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\main\\playlist.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\main\\playlist.js"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\main\\podcast.js",
+      "PackagePath": "staticwebassets\\Admin\\js\\main\\podcast.js"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\mapael.js",
       "PackagePath": "staticwebassets\\Admin\\js\\mapael.js"
     },
@@ -1067,10 +1071,6 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\paginate.js",
       "PackagePath": "staticwebassets\\Admin\\js\\paginate.js"
-    },
-    {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\podcast.js",
-      "PackagePath": "staticwebassets\\Admin\\js\\podcast.js"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\popover.js",
@@ -8129,10 +8129,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\guardians.jpg"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\guardinas2.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\guardinas2.jpeg"
-    },
-    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\guardinas3.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\guardinas3.jpg"
     },
@@ -8243,10 +8239,6 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\spiderman.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\spiderman.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\spiderman2.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\spiderman2.jpeg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\spiderman3.jpeg",

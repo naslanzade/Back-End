@@ -34,7 +34,8 @@ namespace OneSoundApp.Services
 
                     EventName = newInfo.EventName,
                     Location = newInfo.Location,
-                    Image=fileName
+                    Image=fileName,
+                    
 
                 };
 

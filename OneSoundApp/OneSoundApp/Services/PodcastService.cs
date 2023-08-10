@@ -39,6 +39,7 @@ namespace OneSoundApp.Services
                 Name = model.Name,
                 Description = model.Description,               
                 AuthorId = model.AuthorId,
+                CategoryId = model.CategoryId,
 
                 Images = images
             };
@@ -66,21 +67,6 @@ namespace OneSoundApp.Services
             }
         }
 
-        public async Task DeleteImageByIdAsync(int id)
-        {
-            PodcastImage image = await _context.PodcastImage.FirstOrDefaultAsync(x => x.Id == id);
-
-            _context.PodcastImage.Remove(image);
-            await _context.SaveChangesAsync();
-
-            string path = Path.Combine(_env.WebRootPath, "assets/images", image.Image);
-
-            if (File.Exists(path))
-            {
-                File.Delete(path);
-            }
-        }
-
         public async Task EditAsync(int podcastId, PodcastEditVM model)
         {
             List<PodcastImage> images = new();
@@ -104,6 +90,7 @@ namespace OneSoundApp.Services
             podcast.Name=model.Name;
             podcast.Description=model.Description;
             podcast.AuthorId= model.AuthorId;
+            podcast.CategoryId= model.CategoryId;
 
 
             await _context.SaveChangesAsync();
@@ -122,7 +109,7 @@ namespace OneSoundApp.Services
         public async Task<int> GetCountAsync()
         {
             return await _context.Podcast.CountAsync();
-        }
+        }            
 
         public async Task<List<Podcast>> GetPaginatedDatas(int page, int take)
         {
@@ -143,11 +130,24 @@ namespace OneSoundApp.Services
                                         FirstOrDefaultAsync(m => m.Id == id);
         }
 
+        public async Task<Podcast> GetProductByImageId(int? id)
+        {
+            return await _context.Podcast.Include(p => p.Images)
+                                          .FirstOrDefaultAsync(p => p.Images
+                                          .Any(p => p.Id == id));
+        }
+
+        public async Task<PodcastImage> GetImageById(int? id)
+        {
+            return await _context.PodcastImage.FindAsync((int)id);
+        }
+
         public async Task<Podcast> GetWithIncludesAsync(int? id)
         {
             return await _context.Podcast.Where(m => m.Id == id).Include(m => m.Images)
                                                                 .Include(m => m.Author)
                                                                 .Include(m=>m.Category)
+                                                                .Include(m=>m.Records)
                                                                 .FirstOrDefaultAsync();
         }
     }

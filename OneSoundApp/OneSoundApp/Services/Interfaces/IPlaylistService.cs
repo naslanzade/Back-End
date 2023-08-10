@@ -1,4 +1,5 @@
-﻿using OneSoundApp.Models;
+﻿using OneSoundApp.Areas.Admin.ViewModels.Playlist;
+using OneSoundApp.Models;
 
 namespace OneSoundApp.Services.Interfaces
 {
@@ -7,6 +8,13 @@ namespace OneSoundApp.Services.Interfaces
         Task<List<Playlist>> GetAllAsync();
         Task<int> GetCountAsync();
         Task<List<Playlist>> GetPaginatedDatas(int page, int take);
-        Task<Playlist> GetPodcastDetailAsync(int? id);
+        Task<Playlist> GetPodcastDetailAsync(int? id);       
+        Task CreateAsync(PlaylistCreateVM model);
+        Task EditAsync(int playlistId, PlaylistEditVM model);
+        Task DeleteAsync(int id);
+        Task<Playlist> GetByIdAsnyc(int? id);
+        Task<Playlist> GetWithIncludesAsync(int? id);
+        Task<PlaylistImage> GetImageById(int? id);
+        Task<Playlist> GetProductByImageId(int? id);
     }
 }

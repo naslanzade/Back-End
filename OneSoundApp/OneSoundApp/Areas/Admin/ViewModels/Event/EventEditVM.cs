@@ -12,5 +12,6 @@ namespace OneSoundApp.Areas.Admin.ViewModels.Event
         [Required]
         public string Image { get; set; }
         public IFormFile? NewImage { get; set; }
+      
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OneSoundApp.Areas.Admin.ViewModels.Record
+namespace OneSoundApp.Areas.Admin.ViewModels.Records
 {
     public class RecordCreateVM
     {

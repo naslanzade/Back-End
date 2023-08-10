@@ -1,4 +1,4 @@
-﻿namespace OneSoundApp.Areas.Admin.ViewModels.PlaylistSong
+﻿namespace OneSoundApp.Areas.Admin.ViewModels.PlaylistSongs
 {
     public class PlaylistSongDetailVM
     {

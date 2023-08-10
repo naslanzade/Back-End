@@ -13,5 +13,6 @@ namespace OneSoundApp.Areas.Admin.ViewModels.Podcast
         public List<IFormFile> newImages { get; set; }
         public ICollection<PodcastImage> Images { get; set; }
         public int  AuthorId { get; set; }
+        public int CategoryId { get; set; }
     }
 }
