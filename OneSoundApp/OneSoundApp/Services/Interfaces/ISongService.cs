@@ -1,5 +1,4 @@
-﻿using OneSoundApp.Areas.Admin.ViewModels.Blog;
-using OneSoundApp.Areas.Admin.ViewModels.Song;
+﻿using OneSoundApp.Areas.Admin.ViewModels.Songs;
 using OneSoundApp.Models;
 
 namespace OneSoundApp.Services.Interfaces

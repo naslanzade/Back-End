@@ -186,7 +186,7 @@ namespace OneSoundApp.Areas.Admin.Controllers
                 if (id is null) return BadRequest();
                 PlaylistImage image = await _playlistService.GetImageById((int)id);
                 if (image is null) return NotFound();
-                Playlist dbPlaylist = await _playlistService.GetProductByImageId((int)id);
+                Playlist dbPlaylist = await _playlistService.GetPlaylistByImageId((int)id);
                 if (dbPlaylist is null) return NotFound();
                 RemoveImageResponse response = new();
                 response.Result = false;
@@ -218,7 +218,7 @@ namespace OneSoundApp.Areas.Admin.Controllers
                 if (id == null) return BadRequest();
                 PlaylistImage image = await _playlistService.GetImageById((int)id);
                 if (image is null) return NotFound();
-                Playlist dbPlaylist = await _playlistService.GetProductByImageId((int)id);
+                Playlist dbPlaylist = await _playlistService.GetPlaylistByImageId((int)id);
                 if (dbPlaylist is null) return NotFound();
 
                 if (!image.IsMain)

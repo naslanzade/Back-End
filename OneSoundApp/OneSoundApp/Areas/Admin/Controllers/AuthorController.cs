@@ -1,14 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OneSoundApp.Areas.Admin.ViewModels.Author;
-using OneSoundApp.Areas.Admin.ViewModels.Category;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;
 using OneSoundApp.Models;
-using OneSoundApp.Services;
 using OneSoundApp.Services.Interfaces;
-using System.Data;
+
 
 namespace OneSoundApp.Areas.Admin.Controllers
 {

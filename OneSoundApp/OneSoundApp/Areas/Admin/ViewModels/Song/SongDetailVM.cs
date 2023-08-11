@@ -1,6 +1,6 @@
 ﻿using OneSoundApp.Models;
 
-namespace OneSoundApp.Areas.Admin.ViewModels.Song
+namespace OneSoundApp.Areas.Admin.ViewModels.Songs
 {
     public class SongDetailVM
     {

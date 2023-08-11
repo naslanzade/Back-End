@@ -130,7 +130,7 @@ namespace OneSoundApp.Services
                                         FirstOrDefaultAsync(m => m.Id == id);
         }
 
-        public async Task<Podcast> GetProductByImageId(int? id)
+        public async Task<Podcast> GetPodcastByImageId(int? id)
         {
             return await _context.Podcast.Include(p => p.Images)
                                           .FirstOrDefaultAsync(p => p.Images

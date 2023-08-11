@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ixgX2mCIW2jzqMa/ROaTCdocBEp605X3+xgH7g4Eq5U=",
+  "Hash": "x/AXuNzoaT7aC+coR4KXBO+M2qvxBzbrwgCPhgdy7vs=",
   "Source": "OneSoundApp",
   "BasePath": "_content/OneSoundApp",
   "Mode": "Default",
@@ -4367,6 +4367,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Admin\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\main\\album.js",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "Admin/js/main/album.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Admin\\js\\main\\album.js"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\Admin\\js\\main\\playlist.js",
@@ -30734,6 +30751,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\add2.gif"
+    },
+    {
+      "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\akon.jpeg",
+      "SourceId": "OneSoundApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\",
+      "BasePath": "_content/OneSoundApp",
+      "RelativePath": "assets/images/akon.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\akon.jpeg"
     },
     {
       "Identity": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\akon1.jpeg",

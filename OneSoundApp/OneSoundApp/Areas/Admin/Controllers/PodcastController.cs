@@ -191,7 +191,7 @@ namespace OneSoundApp.Areas.Admin.Controllers
                 if (id is null) return BadRequest();
                 PodcastImage image = await _podcastService.GetImageById((int)id);
                 if (image is null) return NotFound();
-                Podcast dbPodcast = await _podcastService.GetProductByImageId((int)id);
+                Podcast dbPodcast = await _podcastService.GetPodcastByImageId((int)id);
                 if (dbPodcast is null) return NotFound();
                 RemoveImageResponse response = new();
                 response.Result = false;
@@ -224,7 +224,7 @@ namespace OneSoundApp.Areas.Admin.Controllers
                 if (id == null) return BadRequest();
                 PodcastImage image = await _podcastService.GetImageById((int)id);
                 if (image is null) return NotFound();
-                Podcast dbPodcast = await _podcastService.GetProductByImageId((int)id);
+                Podcast dbPodcast = await _podcastService.GetPodcastByImageId((int)id);
                 if (dbPodcast is null) return NotFound();
 
                 if (!image.IsMain)

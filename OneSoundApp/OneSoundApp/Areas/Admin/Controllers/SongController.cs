@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using OneSoundApp.Areas.Admin.ViewModels.Blog;
-using OneSoundApp.Areas.Admin.ViewModels.Singer;
-using OneSoundApp.Areas.Admin.ViewModels.Song;
+using OneSoundApp.Areas.Admin.ViewModels.Songs;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;
 using OneSoundApp.Models;

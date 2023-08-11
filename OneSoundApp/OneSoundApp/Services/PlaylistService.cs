@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using OneSoundApp.Areas.Admin.ViewModels.Playlist;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;
@@ -133,7 +132,7 @@ namespace OneSoundApp.Services
                                            FirstOrDefaultAsync(m=>m.Id==id);
         }
 
-        public async Task<Playlist> GetProductByImageId(int? id)
+        public async Task<Playlist> GetPlaylistByImageId(int? id)
         {
             return await _context.Playlists.Include(p => p.Images)
                                          .FirstOrDefaultAsync(p => p.Images

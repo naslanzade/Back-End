@@ -15,6 +15,6 @@ namespace OneSoundApp.Services.Interfaces
         Task<Playlist> GetByIdAsnyc(int? id);
         Task<Playlist> GetWithIncludesAsync(int? id);
         Task<PlaylistImage> GetImageById(int? id);
-        Task<Playlist> GetProductByImageId(int? id);
+        Task<Playlist> GetPlaylistByImageId(int? id);
     }
 }
