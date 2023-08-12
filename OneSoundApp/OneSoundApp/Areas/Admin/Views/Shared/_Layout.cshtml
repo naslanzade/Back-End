@@ -58,6 +58,30 @@
                             <input type="text" class="form-control">
                         </div>
                     </li>
+                    <li class="nav-item dropdown d-none d-lg-block user-dropdown">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <div class="login">
+                                <button style="border: none; color: #60748a; background: transparent; margin-left: 15px; font-size: 15px;" type="submit">
+                                    Login
+                                </button>
+                            </div>
+                        }
+                        else
+                        {
+                            <div style="display:flex;justify-content:center;align-items:center;">
+                                <p style="padding-top:17px;font-family: auto;font-size:17px;color: blue;">
+                                    @userManager.Users.FirstOrDefault(u=>u.UserName==User.Identity.Name).FirstName
+                                </p>
+                                <form asp-controller="Account" asp-action="AdminLogout" method="post">
+                                    <div class="logout">
+                                        <button style="border: none; color: #60748a; background: transparent; margin-left: 10px;font-size:15px;padding-top:8px" type="submit">LogOut</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        }
+                    </li>
                                        
                   
                 </ul>
