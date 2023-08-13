@@ -10,5 +10,6 @@ namespace OneSoundApp.ViewModels.Albums
         public string AlbumName { get; set; }
         public string SingerName { get; set; }
         public decimal Price { get; set; }
+        
     }
 }

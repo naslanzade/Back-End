@@ -33,8 +33,7 @@ namespace OneSoundApp.Controllers
             AlbumVM model = new()
             {
                 Adverts= adverts,
-                PaginatedDatas=paginatedDatas
-                
+                PaginatedDatas=paginatedDatas               
                 
             };
             return View(model);
@@ -59,7 +58,8 @@ namespace OneSoundApp.Controllers
                 Price=album.Price,
                 Songs=album.Song.ToList(),
                 Images=album.Images.ToList(),
-                SingerName=album.Singer.Name
+                SingerName=album.Singer.Name,
+                
 
             };
 
