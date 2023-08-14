@@ -12,6 +12,7 @@ namespace OneSoundApp.Controllers
 
         //Admin:Mail:novrasta.aslanzade@gmail.com;UserName:Nana;Password:Nana123_
         //Member:Mail:novrastafa@code.edu.az;UserName:Nana97;Password:Nana123_
+        //Member:Mail:ayten.aslanova111@gmail.com;UserName:Ayten;Password:Nana123_
 
 
         private readonly UserManager<AppUser> _userManager;
