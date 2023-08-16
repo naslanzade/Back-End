@@ -86,9 +86,9 @@ namespace OneSoundApp.Areas.Admin.Controllers
                     return View();
                 }
 
-                if (item.CheckFileSize(200))
+                if (item.CheckFileSize(500))
                 {
-                    ModelState.AddModelError("image", "Image size must be max 200KB");
+                    ModelState.AddModelError("image", "Image size must be max 500KB");
                     return View();
                 }
             }
@@ -148,9 +148,9 @@ namespace OneSoundApp.Areas.Admin.Controllers
                 return View(request);
             }
 
-            if (request.NewImage.CheckFileSize(200))
+            if (request.NewImage.CheckFileSize(500))
             {
-                ModelState.AddModelError("NewImage", "Image size must be max 200KB");
+                ModelState.AddModelError("NewImage", "Image size must be max 500KB");
                 request.Image = existSinger.Image;
                 return View(request);
             }

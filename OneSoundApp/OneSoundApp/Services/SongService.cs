@@ -46,7 +46,7 @@ namespace OneSoundApp.Services
 
         public async Task DeleteAsync(int id)
         {
-            Song song = await GetByIdAsnyc((int)id);
+            Song song = await GetByIdAsnyc(id);
 
             _context.Songs.Remove(song);
 
