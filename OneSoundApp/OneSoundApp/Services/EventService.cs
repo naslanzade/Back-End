@@ -102,7 +102,7 @@ namespace OneSoundApp.Services
 
         public async Task<List<Event>> GetEventsAsync()
         {
-            return await _context.Events.Take(6).ToListAsync();
+            return await _context.Events.Take(3).ToListAsync();
         }
 
         public async Task<IEnumerable<Event>> GetLatestEventsAsync()

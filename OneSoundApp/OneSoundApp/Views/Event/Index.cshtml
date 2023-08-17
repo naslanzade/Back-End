@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="~/assets/scss/events/events.css">
 }
 
+
+
+
 <!-- Main-part-start -->
 <main>
     <section id="bg-img">
@@ -18,26 +21,18 @@
         </div>
     </section>
 
-    <section id="events">
+    <section id="events" data-count=@ViewBag.count>
         <div class="container">
             <div class="row" id="parent">
-                @foreach (var item in Model.Events)
-                {
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="event-area my-5 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="image">
-                                <img src="~/assets/images/@item.Image" alt="">
-                            </div>
-                            <div class="text-part">
-                                <h4>@item.EventName</h4>
-                                <div class="part">
-                                    <a href="#" class="event-place">@item.Location</a>
-                                    <a href="#" class="event-date">@item.CreatedDate.ToString("MMMM dd, yyyy")</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                }
+                <partial name="_EventPartial" model="@Model.Events" /> 
+            </div>
+            <div class="col-12 button">
+                <button class="btn btn-primary show-more-btn">
+                    Load more <i class="fa-solid fa-angles-right"></i>
+                </button>
+                <button class="btn btn-primary show-less-btn d-none">
+                    Load less <i class="fa-solid fa-angles-right"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -65,5 +60,6 @@
 <!-- Main-part-end -->
 @section Scripts{
     <script src="~/assets/js/events/events.js"></script>
+    <script src="~/assets/js/event.js"></script>
 }
 

@@ -8017,8 +8017,8 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\ArchivoNarrow-VariableFont_wght.ttf"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\07cc7f8c-1fbe-41b3-a57d-01884e68e285_cardib2.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\07cc7f8c-1fbe-41b3-a57d-01884e68e285_cardib2.jpg"
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\09162683-faaf-43e7-9638-d1d6310f4e83_hattori.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\09162683-faaf-43e7-9638-d1d6310f4e83_hattori.jpeg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\097a359b-35c6-49d5-be99-9b478b4df9ca_moment 4.jpg",
@@ -8029,8 +8029,16 @@
       "PackagePath": "staticwebassets\\assets\\images\\245d314b-1e26-4bf6-a8d9-31759f063ac3_cardi b main.jpeg"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\386cbb9b-abeb-4b69-b973-aef6dbaf17b8_Be_Careful_by_Cardi_B.png",
-      "PackagePath": "staticwebassets\\assets\\images\\386cbb9b-abeb-4b69-b973-aef6dbaf17b8_Be_Careful_by_Cardi_B.png"
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\2d030790-7c39-483d-8c4c-0471873b31a5_cardi b.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\2d030790-7c39-483d-8c4c-0471873b31a5_cardi b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\2f0c33bb-b70e-4479-b64d-d3cc00204b51_hajime.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\2f0c33bb-b70e-4479-b64d-d3cc00204b51_hajime.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\3255a450-f9b0-45c1-9611-0d8970dd00d3_hajime.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\3255a450-f9b0-45c1-9611-0d8970dd00d3_hajime.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\41062c01-7d91-4fdf-a6d5-f500cf3c2541_blinding.jpeg",
@@ -8041,8 +8049,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\4833bbb2-cff1-4cfb-93b6-bbd30f509683_after hours1.jpg"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\4a6e01ed-b4ef-4c1e-a100-084d34ef2a5d_basta.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\4a6e01ed-b4ef-4c1e-a100-084d34ef2a5d_basta.jpg"
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\4b8906bd-d7c8-4ed4-a1cb-19b76dc501df_e8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\4b8906bd-d7c8-4ed4-a1cb-19b76dc501df_e8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\4c0f002e-615a-4ade-9383-d8e99e45f6f2_Be_Careful_by_Cardi_B.png",
+      "PackagePath": "staticwebassets\\assets\\images\\4c0f002e-615a-4ade-9383-d8e99e45f6f2_Be_Careful_by_Cardi_B.png"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\565c8728-6467-44cc-93ff-9d1796322b53_spiderman3.jpeg",
@@ -8053,12 +8065,16 @@
       "PackagePath": "staticwebassets\\assets\\images\\629da219-61bf-4d0a-b8f5-49292db3eed6_nicki main.jpeg"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\6625bb03-d171-4a7e-8e37-2f1a8bb7478a_cardi b.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\6625bb03-d171-4a7e-8e37-2f1a8bb7478a_cardi b.jpeg"
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\6774e031-d098-4356-a5b2-63b0c60253a8_e3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\6774e031-d098-4356-a5b2-63b0c60253a8_e3.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\6884b7d5-85db-453a-8d74-fdfb0d86b834_nicki minaj.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\6884b7d5-85db-453a-8d74-fdfb0d86b834_nicki minaj.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\725f4233-e062-44d7-8640-8febc3aa18f9_getup10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\725f4233-e062-44d7-8640-8febc3aa18f9_getup10.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\7af00553-e922-4833-b5a5-560916fa8c63_encore.jpg",
@@ -8109,10 +8125,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\album1.jpg"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\b469eeb7-d258-4946-9056-9db2c8e084f4_getup10.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\b469eeb7-d258-4946-9056-9db2c8e084f4_getup10.jpg"
-    },
-    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\b6561208-5ff9-4968-8618-7e36327bb81f_save your tears.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\b6561208-5ff9-4968-8618-7e36327bb81f_save your tears.jpeg"
     },
@@ -8161,6 +8173,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\c9869c44-029f-43af-8c8a-3497f5a8b5e8_spiderman2.jpeg"
     },
     {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\c99bb076-12d0-45bd-827c-a35ed12dcc44_cardib2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\c99bb076-12d0-45bd-827c-a35ed12dcc44_cardib2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\cbf4c8f0-8792-439a-9283-6b262f215790_money bag.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cbf4c8f0-8792-439a-9283-6b262f215790_money bag.jpg"
+    },
+    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\dictators.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\dictators.jpeg"
     },
@@ -8169,16 +8189,8 @@
       "PackagePath": "staticwebassets\\assets\\images\\drake.jpg"
     },
     {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e3.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\e3.jpg"
-    },
-    {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\e7.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\e7.jpg"
-    },
-    {
-      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\ee13264f-2189-43c1-b6f5-2bb72378bab5_money bag.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\ee13264f-2189-43c1-b6f5-2bb72378bab5_money bag.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\electric zoo.jpg",
@@ -8187,6 +8199,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\eminem-encore.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\eminem-encore.jpg"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\eminem.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\eminem.jpg"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\images\\event.jpg",
@@ -8319,6 +8335,10 @@
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\contact\\contact.js",
       "PackagePath": "staticwebassets\\assets\\js\\contact\\contact.js"
+    },
+    {
+      "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\event.js",
+      "PackagePath": "staticwebassets\\assets\\js\\event.js"
     },
     {
       "Id": "C:\\Users\\novra\\OneDrive\\Desktop\\Back-End\\OneSoundApp\\OneSoundApp\\wwwroot\\assets\\js\\events\\events.js",

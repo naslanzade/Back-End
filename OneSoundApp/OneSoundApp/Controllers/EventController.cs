@@ -25,14 +25,26 @@ namespace OneSoundApp.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            List<Event> events = await _eventService.GetEventsAsync();
+            IEnumerable<Event> events = await _eventService.GetEventsAsync();
+            int count=await _context.Events.CountAsync();
+            ViewBag.count = count;
 
             EventVM model = new()
             {
-                Events = events
+                Events = (List<Event>)events
             };
             return View(model);
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> ShowMoreOrLess(int skip)
+        {
+            IEnumerable<Event> events = await _context.Events.Skip(skip).Take(3).ToListAsync();
+            return PartialView("_EventPartial", events);
+        }
+
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

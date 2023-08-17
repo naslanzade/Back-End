@@ -930,6 +930,29 @@ main #events .event-area .text-part:hover .part .event-place {
 main #events .event-area .text-part:hover .part .event-date {
   color: black;
 }
+main #events .button {
+  margin-top: 30px;
+  text-align: center;
+}
+main #events .button button {
+  border: 1.5px black solid;
+  background-color: white;
+  width: 200px;
+  height: 50px;
+  transition: all 0.5s;
+  color: black;
+  cursor: pointer;
+  font-family: mySecondFont;
+  transition: all 0.5s;
+}
+main #events .button button i {
+  padding-left: 5px;
+}
+main #events .button button:hover {
+  border: 1.5px white solid;
+  background-color: black;
+  color: white;
+}
 main #contact .bg-image {
   background-image: url(../../images/breadcumb3.jpg);
   width: 100%;
