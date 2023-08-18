@@ -390,7 +390,7 @@
                         <div class="collapse" id="form-elements5">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"><a class="nav-link" asp-controller="Playlist" asp-action="Index">Playlist</a></li>
-                                <li class="nav-item"><a class="nav-link" asp-controller="PlaylistSong" asp-action="Index">Playlist Song</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="PlaylistSong" asp-action="Index">Song</a></li>
                             </ul>
                         </div>
                     </li>
@@ -403,6 +403,18 @@
                         <div class="collapse" id="form-elements6">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"><a class="nav-link" asp-controller="User" asp-action="Index">User</a></li>                             
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#form-elements7" aria-expanded="false" aria-controls="form-elements">
+                            <i class="menu-icon fa-solid fa-regular fa-envelope"></i>
+                            <span class="menu-title">Subscribe</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse" id="form-elements7">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"><a class="nav-link" asp-controller="Subscribe" asp-action="Index">Subscribe</a></li>
                             </ul>
                         </div>
                     </li>

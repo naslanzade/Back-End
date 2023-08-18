@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using OneSoundApp.Areas.Admin.ViewModels.Category;
 using OneSoundApp.Areas.Admin.ViewModels.Singer;
 using OneSoundApp.Data;
 using OneSoundApp.Helpers;

@@ -1,4 +1,5 @@
 ﻿@model HeaderVM
+@inject UserManager<AppUser> userManager;
 
 <!-- Header-part-start -->
 <header>
@@ -29,7 +30,7 @@
                             <ul>
                                 @if (User.Identity.IsAuthenticated)
                                 {
-                                    <li><a asp-controller="Account" asp-action="LogOut" class="register">LogOut</a></li>
+                                    <li><a asp-controller="Account" asp-action="LogOut" asp-route-userId="@userManager.Users.Where(m=>m.UserName==User.Identity.Name).FirstOrDefault().Id" class="register">LogOut</a></li>
                                 }
                                 else
                                 {
