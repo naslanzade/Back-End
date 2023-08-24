@@ -1,0 +1,369 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = OneSoundApp
+build_property.RootNamespace = OneSoundApp
+build_property.ProjectDir = C:\Users\novra\OneDrive\Desktop\Back-End\OneSoundApp\OneSoundApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\novra\OneDrive\Desktop\Back-End\OneSoundApp\OneSoundApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Account/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxBZG1pbkxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Advert/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Advert/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Advert/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Advert/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWR2ZXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Album/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWxidW1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Album/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWxidW1cRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Album/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWxidW1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Album/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWxidW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Author/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Author/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Author/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Author/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXV0aG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Blog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Blog/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Blog/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Category/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Event/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Event/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Event/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Event/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/PlaylistSong/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RTb25nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/PlaylistSong/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RTb25nXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/PlaylistSong/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RTb25nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/PlaylistSong/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RTb25nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Playlist/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Playlist/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Playlist/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Playlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxheWxpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Podcast/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9kY2FzdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Podcast/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9kY2FzdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Podcast/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9kY2FzdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Podcast/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUG9kY2FzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Record/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVjb3JkXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Record/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVjb3JkXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Record/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVjb3JkXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Record/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVjb3JkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Singer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2luZ2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Singer/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2luZ2VyXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Singer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2luZ2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Singer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2luZ2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Slider/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Slider/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Slider/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2xpZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Song/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29uZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Song/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29uZ1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Song/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29uZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Song/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU29uZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/Subscribe/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3Vic2NyaWJlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Account/ForgetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3JnZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Account/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Account/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Account/VerifyEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/AlbumCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1DYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/AlbumWishlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1XaXNobGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Album/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Album/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Event/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Playlist/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWxpc3RcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Playlist/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxheWxpc3RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Podcast/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9kY2FzdFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Podcast/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9kY2FzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shared/Components/Footer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRm9vdGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shared/Components/Header/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shared/_EventPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FdmVudFBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Song/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ1xEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Song/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29uZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/novra/OneDrive/Desktop/Back-End/OneSoundApp/OneSoundApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hka16qqcyz

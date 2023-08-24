@@ -207,13 +207,14 @@ namespace OneSoundApp.Areas.Admin.Controllers
         private List<SongVM> GetMappedDatas(List<Song> songs)
         {
             List<SongVM> mappedDatas = new();
-            foreach (var blog in songs)
+            foreach (var item in songs)
             {
                 SongVM songList = new()
                 {
-                    Id = blog.Id,
-                    SongName = blog.SongName,
-                    Image = blog.Image,
+                    Id = item.Id,
+                    SongName = item.SongName,
+                    Image = item.Image,
+                    AlbumName = item.Album.AlbumName,
 
                 };
                 mappedDatas.Add(songList);
